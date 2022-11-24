@@ -1,0 +1,102 @@
+package coreJava;
+
+import java.util.Scanner;
+
+public class demo 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World");
+		System.err.println("Dhruv virani");
+		
+		System.out.println("");
+		
+		
+		//Simple Calculator//
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter A : ");
+		float a = sc.nextFloat();
+		System.out.print("Enter B : ");
+		float b = sc.nextFloat();
+		System.out.print("Enter C : ");
+		float c = sc.nextFloat();
+		System.out.print("Enter D : ");
+		float d = sc.nextFloat();
+				
+		float y = a+b+c+d;
+		System.out.println("Addition : "+y);
+		
+		float e = a-b-c-d;
+		System.out.println("Subtracation : "+e);
+		
+		float f = a*b*c*d;
+		System.out.println("Multipliaction : "+f);
+		
+		float g = a/b/c/d;
+		System.out.println("Division : "+g);
+		
+		float h = a%b%c%d;
+		System.out.println("Modulu : "+h);
+		
+		System.out.println("");
+		
+		//Even And Odd Number//
+		System.out.print("Enter a Number : ");
+		int n = sc.nextInt();
+		if(n%2==0)
+		{
+			System.out.print("This is number is Evean");
+			System.out.println("");
+		}
+		else
+		{
+			System.out.println("This is number is ODD");
+		}
+		
+		System.out.println("");
+		
+		//KBC GAME//
+		
+		System.out.println("WELCOME TO THE GAME(KBC)");
+		System.out.println("");
+		System.out.println("Bahubali festival is related to...");
+		System.out.println("(1) Islam");
+		System.out.println("(2) Hinduism");
+		System.out.println("(3) Buddhism");
+		System.out.println("(4) Jainism");
+		System.out.println("");
+		System.out.print("Enter Answer : ");
+		int s = sc.nextInt();
+		
+		int i;
+		for(i=1;i<=1;i++)
+		{
+			switch(i)
+			{
+			case 1:	
+				if(s==4)
+				{
+					System.out.println("Your answer is Absolute Right... you Win $.10000");
+					System.out.println("Next Question is in your Computer Screen...");
+				}
+				else
+				{
+					System.out.println("Try Again!!!!");
+					System.out.println("Enter Answer : ");
+					int z = sc.nextInt();
+				}
+				if(z==4)
+				{
+					System.out.println("Your answer is Absolute Right... you Win $.10000");
+				}
+				else
+				{
+					System.out.println("Game Over!!!");
+					System.out.println("Right Answer is : (4) Jainism");
+				}
+			}
+		}
+	}	
+	
+}

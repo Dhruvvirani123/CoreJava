@@ -1,0 +1,15 @@
+package coreJava;
+
+import java.util.Scanner;
+
+public class ASCII_value_of_a_given_character {
+		public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			
+//			System.out.print("Enter : ");
+//			int d = sc.nextInt();
+			String s = "Dhruv";
+			System.out.println("length of string : "+s.length());
+	}
+
+}

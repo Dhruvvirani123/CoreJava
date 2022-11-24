@@ -1,0 +1,11 @@
+package coreJava;
+
+import java.util.Scanner;
+
+public class leap_year_ass {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		
+	}
+}

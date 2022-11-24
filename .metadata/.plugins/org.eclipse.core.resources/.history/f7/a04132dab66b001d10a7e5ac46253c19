@@ -1,0 +1,42 @@
+package coreJava;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class sum_and_average {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+//		System.out.print("Enter Number A : ");
+//		float A = sc.nextFloat();
+//		
+//		System.out.print("Enter Number B : ");
+//		float B = sc.nextFloat();
+//		
+//		System.out.print("Enter Number C : ");
+//		float C = sc.nextFloat();
+//		
+//		System.out.print("Enter Number D : ");
+//		float D = sc.nextFloat();
+//		
+//		System.out.print("Enter Number E : ");
+//		float E = sc.nextFloat();
+//		
+//		float sum = A+B+C+D+E;
+//		System.out.print("Total Sum is : "+sum);
+//		
+//		System.out.println("");
+//		
+//		float avg = sum/5;
+//		System.out.print("Average is : "+avg);
+		
+		
+		for(int i=1;i<=5;i++)
+		{
+			System.out.print("Enter Number ["+i+"] : ");
+			float A = sc.nextFloat();
+		}
+			
+	}
+
+}

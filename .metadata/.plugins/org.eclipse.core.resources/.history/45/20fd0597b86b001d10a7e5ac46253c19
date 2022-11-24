@@ -1,0 +1,20 @@
+package coreJava;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class sum_and_average {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+
+		int sum =0,n=0;
+		for(int i=1;i<=5;i++)
+		{
+			System.out.print("Enter Number ["+i+"] : ");
+			int A = sc.nextInt();
+			
+			sum = sum + A;
+		}
+		System.out.print("Sum is : ";
+}
+}
