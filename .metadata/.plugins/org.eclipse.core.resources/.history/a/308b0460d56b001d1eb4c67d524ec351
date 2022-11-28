@@ -1,0 +1,24 @@
+package coreJava;
+
+import java.util.Scanner;
+
+public class string_Count {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter String : ");
+		String s = sc.nextLine();
+		System.out.println("length of string : "+s.length());
+		
+		System.out.println();
+		int sum = 0;
+		System.out.print("Enter 1 to any number : ");
+		int n = sc.nextInt();
+		for (int i = 1; i <=n; ++i) {
+			sum += i;
+		}
+		System.out.println("Sum = "+sum);
+	}
+	
+	
+
+}

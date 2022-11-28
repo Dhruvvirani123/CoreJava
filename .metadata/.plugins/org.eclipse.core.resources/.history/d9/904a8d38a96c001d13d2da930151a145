@@ -1,0 +1,12 @@
+package coreJava;
+
+public class Concat_String {
+	public static void main(String[] args) {
+		String s = "Tops ";
+		String s1 = "Technologies!";
+		System.out.println(s.concat(s1));
+		
+		System.out.println("Compare String Result in Boolean Value : "+s.equals(s1));
+	}
+
+}

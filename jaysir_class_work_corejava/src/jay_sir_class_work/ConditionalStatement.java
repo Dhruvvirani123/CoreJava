@@ -1,7 +1,7 @@
 package jay_sir_class_work;
 import java.util.Scanner;
 
-//conditional statemetns
+//conditional statements
 //1.simple if
 //2.if else
 //	3.nested if
@@ -18,6 +18,8 @@ public class ConditionalStatement {
 		EX obj = new EX();
 		obj.show();
 		int i;
+		
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter i = ");
 		i = sc.nextInt();
@@ -74,12 +76,11 @@ public class ConditionalStatement {
 		}
 
 		// 5.switch case
-		int lang;
 		System.out.println("1.For English");
 		System.out.println("2.Hindi k liye 2");
 		System.out.println("3.gujarati mate 3");
 		System.out.println("enter your choince: ");
-		lang = sc.nextInt();
+		int lang = sc.nextInt();
 		switch (lang) {
 		case 1:
 			System.out.println("you selected english");

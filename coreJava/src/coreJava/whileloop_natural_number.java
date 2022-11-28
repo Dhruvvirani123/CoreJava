@@ -1,3 +1,4 @@
+
 package coreJava;
 
 public class whileloop_natural_number {

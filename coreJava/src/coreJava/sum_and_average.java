@@ -2,8 +2,10 @@ package coreJava;
 import java.util.Iterator;
 import java.util.Scanner;
 
+@SuppressWarnings("unused")
 public class sum_and_average {
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner (System.in);
 
 		float sum =0,n=0;
@@ -14,10 +16,10 @@ public class sum_and_average {
 			
 			sum = sum + A;
 		}
-		System.out.print("Sum is : "+sum);
+		System.out.print("Sum : "+sum);
 		
 		System.out.println("");
 		n = sum/5;
-		System.out.print("Average is : "+n);
+		System.out.print("Average : "+n);
 }
 }

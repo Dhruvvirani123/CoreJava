@@ -9,6 +9,7 @@ public class ArrayDemo {
 		
 		
 		int size;
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		System.out.print("enter size of array : ");
 		size = sc.nextInt();

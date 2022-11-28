@@ -1,0 +1,14 @@
+package coreJava;
+
+import java.util.Scanner;
+
+public class Color_Exercise {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String str = "Red is my fevoritr color";
+		String str2 = "Orange is also my fevorite color";
+		
+		System.out.println("find the second most frequent charcter ina string. The given string is : successses the second most frecunts char in the string is : c Create a class named 'print number' to print various number of different data types by creating differint methods with the same name 'printn' having a parameter for each data tyape");
+	}
+}

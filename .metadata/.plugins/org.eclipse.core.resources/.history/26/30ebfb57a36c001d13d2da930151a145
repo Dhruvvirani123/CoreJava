@@ -1,0 +1,8 @@
+package coreJava;
+
+public class divisible {
+	public static void main(String[] args) {
+		
+	}
+
+}

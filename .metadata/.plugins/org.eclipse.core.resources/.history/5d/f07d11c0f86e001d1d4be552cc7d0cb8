@@ -1,0 +1,39 @@
+package jay_sir_class_work;
+
+
+//CONSTRUCTOR --> special member function of class which has same name as class name
+//TYPES
+//1.default
+//2.parameterized
+//3.copy
+
+
+class laptop
+{
+	double price;
+	String company;
+	
+	laptop()
+	{
+		System.out.println("This is Default Constructor...");
+	}
+	laptop(double price,String company)
+	{
+		System.out.println("this is Para Cons......");
+		this.price = price;
+		this.company = company;
+	}
+	
+	public void setprice(double price)
+	{
+		this.price = price;
+	}
+	public void getprice(String company)
+	{
+		this.company = company;
+	}
+}
+
+public class Constructor {
+
+}

@@ -1,0 +1,17 @@
+package coreJava;
+
+import java.util.Scanner;
+
+public class concatenate_with_String {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);  
+//		String s = "Dhruv ";
+//		String s1 = "Viarni";
+		
+//		System.out.println("Enter String 1 : ");
+//		string s = sc.
+//		
+//		System.out.println(s.concat(s1));
+	}
+
+}

@@ -1,0 +1,20 @@
+package coreJava;
+
+import java.util.Scanner;
+
+public class ASCII_value_of_a_given_character {
+		public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.print("Enter String : ");
+			String str = sc.nextLine();
+			int c = str.codePointAt(0);
+			System.out.print("String Characters Values is : "+c);
+
+			System.out.println();
+			System.out.print("Enter Input : ");
+			int n = sc.nextInt();
+			System.out.printf("%d+%d%d+%d%d%d",n,n,n,n,n,n);
+			
+	}
+}

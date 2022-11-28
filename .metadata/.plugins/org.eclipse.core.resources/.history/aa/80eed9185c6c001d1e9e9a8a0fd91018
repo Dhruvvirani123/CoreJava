@@ -1,0 +1,17 @@
+package coreJava;
+
+import java.util.Scanner;
+
+public class n_nn_nnn {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.print("Enter Input : ");
+		int n = sc.nextInt();
+		System.out.printf("%d + %d%d + %d%d%d + %d%d%d%d",n,n,n,n,n,n,n,n,n,n);
+		
+		System.out.print("Enter Input : ");
+		char a = sc.next( ).charAt(0);
+		System.out.printf("%s + %s%s + %s%s%s + %s%s%s%s",a,a,a,a,a,a,a,a,a,a);
+	}
+}

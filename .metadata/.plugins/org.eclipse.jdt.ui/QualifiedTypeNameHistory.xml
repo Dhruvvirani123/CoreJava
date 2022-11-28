@@ -2,5 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="coreJava.demo"/>
     <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterMessageFromOperator"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

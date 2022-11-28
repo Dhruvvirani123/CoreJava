@@ -1,0 +1,29 @@
+package coreJava;
+
+import java.util.Scanner;
+
+class student{
+	static {
+		System.out.println("Static block in student class");
+	}
+	int id;
+	int per;
+	static String cname = "Tops";
+	public void input() {
+		Scanner sc = new Scanner (System.in);
+		System.out.print("Enter ID : ");
+		id = sc.nextInt();
+		System.out.print("Enter Per : ");
+		per = sc.nextInt();
+	}
+	public void show() {
+		System.out.println("id : "+id+" per : "+per+" cname : "+cname);
+	}
+}
+
+public class ClassObject {
+	public static void main(String[] args) {
+		
+	}
+
+}
