@@ -43,6 +43,7 @@ public class Game_kbc {
 					} else {
 						System.out.println("So Sorry!!! Game Over!!!");
 						System.out.println("Right Answer is : (4) Jainism");
+						System.out.println("Next Person");
 						break;
 					}
 /////////////////////////////////////////////////////Question : 2//////////////////////////////////////////////////////////
@@ -79,7 +80,9 @@ public class Game_kbc {
 						}
 					}
 				}
+
 			}
 		}
 	}
+
 }

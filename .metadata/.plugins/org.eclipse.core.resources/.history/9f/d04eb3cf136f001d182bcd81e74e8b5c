@@ -12,7 +12,7 @@ public class Color_Exercise {
         boolean starts1 = st1.startsWith(start);
         boolean starts2 = st2.startsWith(start);
 
-        System.out.println( st1 + " starts with " + start + "? : " + starts1);
-        System.out.println(st2 + " starts with " + start + "? : " + starts2);
+        System.out.println( st1 + " starts with " + start + "? " + starts1);
+        System.out.println(st2 + " starts with " + start + "? " + starts2);
 	}	
 }
