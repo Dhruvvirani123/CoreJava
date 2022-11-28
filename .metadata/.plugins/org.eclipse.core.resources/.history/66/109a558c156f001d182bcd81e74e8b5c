@@ -1,0 +1,9 @@
+package coreJava;
+
+public class Character_Position {
+	public static void main(String[] args) {
+		
+		String s = "Tops Technologies !";
+		System.out.println(s);
+	}
+}
