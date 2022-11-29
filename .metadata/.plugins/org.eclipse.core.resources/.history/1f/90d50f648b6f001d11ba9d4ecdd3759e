@@ -1,0 +1,8 @@
+package coreJava;
+
+public class most_frequent_char {
+	
+	String s = "Successes";
+	
+
+}
