@@ -1,0 +1,42 @@
+package jay_sir_class_work;
+
+import java.util.Scanner;
+
+class student
+{
+	private int id;
+	private String name;
+	private float per;
+	student(int id,String name,float per)
+	{
+		this.id=id;
+		this.name=name;
+		this.per=per;
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "id : "+id+ "Name : "+name+ "per : "+per;
+	}
+}
+
+public class Encapsuation {
+	public static void main(String[] args) {
+		int id;
+		String name;
+		float per;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter ID : ");
+		id = sc.nextInt();
+		System.out.print("Enter Name : ");
+		name = sc.next();
+		System.out.print("Enter Per : ");
+		per = sc.nextFloat();
+		
+		student s = new student(id,name,per);
+		System.out.println(s);
+		
+	}
+
+}

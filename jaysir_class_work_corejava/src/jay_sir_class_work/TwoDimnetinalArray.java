@@ -18,7 +18,7 @@ public class TwoDimnetinalArray {
 						System.out.print(arr2[row][col]);
 					}
 						System.out.println();
-					}
-			}	
-	}
+					}	
+		}	
+}
 

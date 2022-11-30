@@ -9,6 +9,8 @@ public class n_nn_nnn {
 		Scanner sc = new Scanner (System.in);
 		
 		System.out.print("Input integer : ");
-		int s  = sc.nextInt();	
+		int s  = sc.nextInt();
+		
+		System.out.println(+s+ " + " +s+""+s+" + " +s+ +s+ +s);
 	}
 }
