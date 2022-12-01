@@ -1,0 +1,16 @@
+package coreJava;
+
+class printnumber{
+	int x;
+	double a;
+	float b;
+	long c;
+	
+	private void print(x) {
+		System.out.println(x);
+	}
+	
+}
+public class Different_methods_same_name {
+
+}

@@ -1,0 +1,18 @@
+package coreJava;
+
+class area{
+	public void output (int l, int b) {
+		System.out.println("Area of Rectangle is : "+l*b);
+	}
+	void input (int a) {
+		System.out.println("Area of Square is : "+a*a);
+	}
+}
+public class area_square_rectangle {
+	public static void main(String[] args) {
+		area b;
+		b.output(12, 13);
+		b.output(12, 12);
+		
+	}
+}

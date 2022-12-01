@@ -1,0 +1,10 @@
+package coreJava;
+
+class area{
+	
+}
+public class area_square_rectangle {
+	public static void main(String[] args) {
+		System.out.println(arg);
+	}
+}

@@ -1,0 +1,22 @@
+package coreJava;
+
+class printnumber{
+
+	public void show(int x) {
+		System.out.println(x);
+	}
+	public void show(double x) {
+		System.out.println(x);
+	}
+	public void show(float x) {
+		System.out.println(x);
+	}
+	public void show(long x) {
+		System.out.println(x);
+	}
+}
+public class Different_methods_same_name {
+	public static void main(String[] args) {
+		
+	}
+}
