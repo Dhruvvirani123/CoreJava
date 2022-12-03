@@ -1,0 +1,52 @@
+package coreJava;
+
+import java.util.Scanner;
+
+class Member{
+		int age,sal;
+		String name,address;
+		double mo;
+		Scanner sc = new Scanner (System.in);
+		
+		public Member(String name,int age,double mo,String address,int sal) {
+			this.name = name;
+			this.age = age;
+			this.mo = mo;
+			this.address = address;
+			this.sal = sal;
+		}
+		public void printname() {
+			System.out.print("Enter Name : ");
+			name = sc.next();
+		}
+		public void printAge() {
+			System.out.print("Enter your Age : ");
+			age = sc.nextInt();
+		}
+		public void printmo() {
+			System.out.print("Enter Mobile Number : ");
+			mo = sc.nextInt();
+		}
+		public void printaddress() {
+			System.out.print("Enter Address : ");
+			address = sc.next();
+		}
+		public void printSalary() {
+			System.out.println("Salary : "+sal);
+		}
+		
+		
+}
+
+public class Data_Member {
+	public static void main(String[] args) {
+		Member h = new Member(null, 200000, 200000, null, 200000);	
+		h.printname();
+		h.printAge();
+		h.printmo();
+		h.printaddress();
+		h.printSalary();
+		
+		
+	}
+}

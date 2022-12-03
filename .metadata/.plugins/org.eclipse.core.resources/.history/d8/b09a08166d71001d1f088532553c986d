@@ -1,0 +1,33 @@
+package coreJava;
+
+import java.util.Scanner;
+
+class Member{
+		int age,mo,sal;
+		String name,address;
+		Scanner sc = new Scanner (System.in);
+		
+		public Member(String name,int age,int mo,String address,int sal) {
+			this.name = name;
+			this.age = age;
+			this.mo = mo;
+			this.address = address;
+			this.sal = sal;
+		}
+		public void printSalary() {
+			System.out.println("Salary : "+sal);
+		}
+		public void printname() {
+			System.out.print("Enter Name : ");
+			name = sc.next();
+		}
+}
+
+public class Data_Member {
+	public static void main(String[] args) {
+		Member h = new Member(null, 200000, 200000, null, 200000);	
+		h.printSalary();
+		h.printname();
+		
+	}
+}

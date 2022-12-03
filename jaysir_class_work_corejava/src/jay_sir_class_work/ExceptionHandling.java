@@ -8,10 +8,10 @@ public class ExceptionHandling {
 		try {
 			Scanner sc = new Scanner (System.in);
 			System.out.print("Enter Number 1 : ");
-			int i = sc.nextInt();
+			float i = sc.nextFloat();
 			System.out.print("Enter Number 2 : ");
-			int j = sc.nextInt();
-			int k = i/j;
+			float j = sc.nextFloat();
+			float k = i/j;
 			System.out.println("k = "+k);
 			
 		} catch (Exception e) {
