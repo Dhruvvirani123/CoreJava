@@ -1,0 +1,10 @@
+package jay_sir_class_work;
+
+public class filewriterandreader {
+	public static void main(String[] args) {
+		fileWriteranderader fr = new FileWriter("Virani.txt");
+		String s = "This ia another way to file Handling";
+		fr.write(s);
+		
+	}
+}

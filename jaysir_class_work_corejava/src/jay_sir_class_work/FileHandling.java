@@ -17,6 +17,9 @@ public class FileHandling {
 		
 		FileInputStream fis = new FileInputStream("dhruv.txt");
 		int i;
-		
+		while((i=fis.read())!=-1) {
+			System.out.print((char)i);
+		}
+		fis.close();
 	}
 }
