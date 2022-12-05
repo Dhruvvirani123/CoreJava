@@ -26,11 +26,10 @@ class Square extends rectangle
 	}
 }
 
-
 public class Rectangle_with_two_data_member {
 	public static void main(String[] args) {
-		rectangle r = new rectangle (4,5);
-		Square s = new Square (4);
+		rectangle r = new rectangle (9,5);
+		Square s = new Square (8);
 		r.print_area();
 		r.print_perimeter();
 		s.print_area();
