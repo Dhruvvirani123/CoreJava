@@ -6,6 +6,7 @@ public class ExceptionHandling {
 	public static void main(String[] args) {
 
 		try {
+			@SuppressWarnings("resource")
 			Scanner sc = new Scanner (System.in);
 			System.out.print("Enter Number 1 : ");
 			float i = sc.nextFloat();

@@ -10,6 +10,7 @@ class student{
 	int per;
 	static String cname = "Tops";
 	public void input() {
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner (System.in);
 		System.out.println();
 		System.out.print("Enter ID : ");

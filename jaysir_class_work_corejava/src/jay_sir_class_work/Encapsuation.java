@@ -24,6 +24,7 @@ public class Encapsuation {
 		int id;
 		String name;
 		float per;
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Enter ID : ");

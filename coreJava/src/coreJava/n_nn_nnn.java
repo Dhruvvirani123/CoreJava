@@ -6,6 +6,7 @@ public class n_nn_nnn {
 	
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner (System.in);
 		
 		System.out.print("Input integer : ");

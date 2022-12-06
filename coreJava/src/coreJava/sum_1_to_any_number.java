@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class sum_1_to_any_number {
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		
 		int sum = 0;

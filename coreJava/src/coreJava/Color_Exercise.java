@@ -2,6 +2,7 @@ package coreJava;
 
 import java.util.Scanner;
 
+@SuppressWarnings("unused")
 public class Color_Exercise {
 	public static void main(String[] args) {
 		String st1 = "Red is favorite color.";

@@ -20,6 +20,7 @@ public class concatenate_with_String {
 		String str1 = sc.nextLine();
 		
 		System.out.print("Enter String 3 : ");
+		@SuppressWarnings("unused")
 		String str2 = sc.nextLine();
 		
 		System.out.println();

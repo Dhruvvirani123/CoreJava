@@ -3,8 +3,11 @@ package jay_sir_class_work;
 public class StringDemo {
 	
 	public static void main(String[] args) {
+		@SuppressWarnings("unused")
 		String s ="hello java";
+		@SuppressWarnings("unused")
 		String s2 ="hello java";
+		@SuppressWarnings("unused")
 		String s1 ="hello java again";
 		
 //		s1 = s1.toLowerCase();
