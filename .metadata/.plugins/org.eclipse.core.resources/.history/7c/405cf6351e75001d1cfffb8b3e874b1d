@@ -23,10 +23,10 @@ public class vectoreper {
 		System.out.println(virani);
 		System.out.println("Size of Vector : "+virani.size());
 		
-		System.out.println();
-		@SuppressWarnings("rawtypes")
-		Enumeration dh = virani.elements();
-		while(dh.hasMoreElements())
-		System.out.println(dh.nextElement());
+//		System.out.println();
+//		@SuppressWarnings("rawtypes")
+//		Enumeration dh = virani.elements();
+//		while(dh.hasMoreElements())
+//		System.out.println(dh.nextElement());
 	}
 }

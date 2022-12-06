@@ -9,7 +9,7 @@ public class vectoreper {
 		@SuppressWarnings("rawtypes")
 		Vector virani = new Vector<>();
 		
-		virani.add("Dhruv");
+		virani.add("dhruv");
 		virani.add('D');
 		virani.add(12.25);
 		virani.add(1212121);
@@ -21,7 +21,6 @@ public class vectoreper {
 		
 		virani.remove(3);
 		System.out.println(virani);
-		System.out.println("Size of Vector : "+virani.size());
 		
 		System.out.println();
 		@SuppressWarnings("rawtypes")

@@ -25,8 +25,8 @@ public class vectoreper {
 		
 		System.out.println();
 		@SuppressWarnings("rawtypes")
-		Enumeration dh = virani.elements();
-		while(dh.hasMoreElements())
-		System.out.println(dh.nextElement());
+//		Enumeration dh = virani.elements();
+//		while(dh.hasMoreElements())
+//		System.out.println(dh.nextElement());
 	}
 }

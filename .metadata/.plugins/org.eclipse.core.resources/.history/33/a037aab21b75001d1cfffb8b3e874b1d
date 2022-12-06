@@ -26,6 +26,7 @@ public class TwoDimnetinalArray {
 						sum = arr1[row][col] + arr2[row][col];
 						System.out.println(+sum);
 					}
+					
 				}	
 		}	
 }

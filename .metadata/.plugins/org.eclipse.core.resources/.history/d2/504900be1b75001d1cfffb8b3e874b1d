@@ -27,6 +27,7 @@ public class TwoDimnetinalArray {
 						System.out.println(+sum);
 					}
 				}	
+				System.out.println("Dhruuv virani");
 		}	
 }
 

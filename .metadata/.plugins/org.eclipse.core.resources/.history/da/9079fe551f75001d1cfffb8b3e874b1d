@@ -22,7 +22,7 @@ public class divisible {
 		System.out.print("Enter 1 to any Number and divisible in 5 : ");
 		int n = sc.nextInt();
 		
-		System.out.println("You enter "+n+" and 0 to "+n+ " Divisible in 5 : ");
+		System.out.println("Divisible 5 : ");
 		for (int i = 1; i <=n; i++) {
 			if(i%5==0)
 			{
