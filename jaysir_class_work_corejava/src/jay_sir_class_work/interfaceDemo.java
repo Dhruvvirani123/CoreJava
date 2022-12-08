@@ -11,8 +11,7 @@ interface inter2 {
 	public static void interface5() {
 		System.out.println("interface 5");
 	}
-}
-
+}	
 interface inter3 extends inter1,inter2{
 	public void interface3();
 	public static void interface6() {

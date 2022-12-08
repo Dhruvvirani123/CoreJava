@@ -20,9 +20,9 @@ public class StringDemo {
 //		 dhruv = dhruv.replace(" ", "_");
 //		 System.out.println(dhruv);
 		 
-		 String letter = "Dear Name, Thanks a lot!";
-		 letter = letter.replace("Name", "Dhruv Virani");
-		 System.out.println(letter);
+//		 String letter = "Dear Name, Thanks a lot!";
+//		 letter = letter.replace("Name", "Dhruv Virani");
+//		 System.out.println(letter);
 		 
 		//System.out.println("length of string : "+s.length());
 //		System.out.println(s1.charAt(9));
@@ -30,7 +30,7 @@ public class StringDemo {
 //		System.out.println(s);
 		//System.out.println(s.endsWith("a"));
 //		System.out.println(s.contains("ja"));
-//		System.out.println(s.compareTo(s1));
+		System.out.println(s.compareTo(s1));
 //		System.out.println(s.compareToIgnoreCase(s2));
 //		System.out.println(s.equals(s2));
 //		System.out.println(s.equalsIgnoreCase(s2));

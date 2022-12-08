@@ -1,9 +1,0 @@
-package jay_sir_class_work;
-
-abstract 
-public class Abstraction {
-	public static void main(String[] args) {
-		
-	}
-
-}
