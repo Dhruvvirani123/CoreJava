@@ -5,15 +5,15 @@ abstract class marks{
 }
 class A extends marks{
 
-	int mar1,mar2,mar3;
+	int marks1,marks2,marks3;
 	A(int m1, int m2, int m3){
-		mar1 = m1;
-		mar2 = m2;
-		mar3 = m3;
+		marks1 = m1;
+		marks2 = m2;
+		marks3 = m3;
 	}
 	@Override
 	public float getPercentage() {
-		float total = ((mar1+mar2+mar3)/(float)300)*100;
+		float total = ((marks1+marks2+marks3)/(float)300)*100;
 		return total;
 	}
 	
@@ -21,10 +21,10 @@ class A extends marks{
 class B extends marks{
 
 	int marks1,marks2,marks3;
-	B(int d1, int d2, int d3){
-		marks1 = d1;
-		marks2 = d2;
-		marks3 = d3;
+	B(int m1, int m2, int m3){
+		marks1 = m1;
+		marks2 = m2;
+		marks3 = m3;
 	}
 	@Override
 	public float getPercentage() {
