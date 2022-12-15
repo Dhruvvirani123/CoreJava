@@ -1,7 +1,5 @@
 package jay_sir_class_work;
 
-import java.util.Scanner;
-
 abstract class RBI{
 	public abstract void interest();
 	public abstract void homelone();
@@ -18,6 +16,7 @@ class SBI extends RBI{
 		System.out.println("SBI homelone interest : 7%");
 	}
 }
+
 class PNB extends RBI{
 	public void interest() {
 		System.out.println("PNB interest : 5%");
@@ -26,6 +25,7 @@ class PNB extends RBI{
 		System.out.println("PNB homelone interest : 7%");
 	}
 }
+
 class Kotak extends RBI{
 	public void interest() {
 		System.out.println("Kotak Interest : 7%");
@@ -34,9 +34,9 @@ class Kotak extends RBI{
 		System.out.println("Kotak homelone interest : 8%");
 	}
 }
+
 public class Abstraction {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner (System.in);
 		PNB p = new PNB();
 		p.interest();
 		p.homelone();

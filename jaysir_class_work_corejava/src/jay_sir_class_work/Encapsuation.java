@@ -29,9 +29,9 @@ public class Encapsuation {
 		
 		System.out.print("Enter ID : ");
 		id = sc.nextInt();
-		System.out.print("Enter Name : ");
+		System.out.print(" Enter Name : ");
 		name = sc.next();
-		System.out.print("Enter Per : ");
+		System.out.print(" Enter Per : ");
 		per = sc.nextFloat();
 		
 		student s = new student(id,name,per);

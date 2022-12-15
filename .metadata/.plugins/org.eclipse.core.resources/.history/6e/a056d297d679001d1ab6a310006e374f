@@ -1,0 +1,10 @@
+package coreJava;
+
+abstract class bank{
+	
+}
+public class AbstractBank {
+	public static void main(String[] args) {
+		
+	}
+}

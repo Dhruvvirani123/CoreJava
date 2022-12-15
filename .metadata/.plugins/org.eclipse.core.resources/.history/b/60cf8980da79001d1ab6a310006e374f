@@ -1,0 +1,47 @@
+package coreJava;
+
+abstract class bank{
+	abstract int getbalance();
+}
+class bankA extends bank{
+	int balance;
+	void deposite(int money) {
+		balance += money;
+	}
+	int getbalance() {
+		return balance;
+	}
+}
+class bankB extends bank{
+	int balance;
+	void deposit(int money) {
+		balance += money;
+	}
+	int getbalance() {
+		return balance;
+	}
+}
+class bankC extends bank{
+	int balance;
+	void deposit(int money) {
+		balance += money;
+	}
+	int getbalance() {
+		return balance;
+	}
+}
+public class AbstractBank {
+	public static void main(String[] args) {
+		bankA bankA = new bankA();
+		bankB bankB = new bankB();
+		bankC bankC = new bankC();
+		
+		bankA.deposite(10000);
+		bankB.deposit(20000);
+		bankC.deposit(30000);
+		
+		bank a = 0;
+		System.out.println("Balance 0f bank A : "+a.getbalance());
+		
+	}
+}

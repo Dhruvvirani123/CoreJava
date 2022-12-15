@@ -1,0 +1,29 @@
+package coreJava;
+
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public abstract class SwingP implements ActionListener{
+	JButton b1,b2;
+	JLabel l1,l2;
+	JTextField t1,t2;
+	
+	public SwingP() {
+		JFrame dr = new JFrame("P");
+		dr.setVisible(true);
+		dr.setLayout(null);
+		dr.setSize(600,600);
+		
+		l1 = new JLabel("Username");
+		l1.setBounds(100, 100, 120, 20);
+	}
+}
+public class SwingP {
+	public static void main(String[] args) {
+		new SwingP();
+	}
+}

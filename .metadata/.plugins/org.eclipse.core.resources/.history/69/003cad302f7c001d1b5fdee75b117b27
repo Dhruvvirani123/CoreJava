@@ -1,0 +1,10 @@
+package coreJava;
+
+class triangle {
+	public void tringle(int a,int b,int c) {
+		
+	}
+}
+public class Trianglep {
+
+}

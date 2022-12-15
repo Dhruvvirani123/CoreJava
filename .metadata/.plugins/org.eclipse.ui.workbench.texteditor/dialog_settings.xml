@@ -6,16 +6,36 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="swing"/>
 		<list key="findhistory">
+			<item value="swing"/>
+			<item value="dhruv"/>
+			<item value="b1"/>
+			<item value="virani"/>
+			<item value="data"/>
+			<item value="ActionEvent"/>
+			<item value="Username"/>
+			<item value="Password"/>
+			<item value="this"/>
+			<item value="Swing_Demo"/>
 		</list>
 		<list key="replacehistory">
+			<item value="virani"/>
+			<item value="Username"/>
+			<item value="Password"/>
+			<item value="Swing_Demo"/>
+			<item value="Swing_demo"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="530"/>
-		<item key="DIALOG_Y_ORIGIN" value="112"/>
+		<item key="DIALOG_X_ORIGIN" value="820"/>
+		<item key="DIALOG_Y_ORIGIN" value="165"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="105"/>
+		<item key="DIALOG_Y_ORIGIN" value="240"/>
 	</section>
 </section>

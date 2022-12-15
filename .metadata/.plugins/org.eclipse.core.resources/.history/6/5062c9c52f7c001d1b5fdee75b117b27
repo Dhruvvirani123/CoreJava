@@ -1,0 +1,15 @@
+package coreJava;
+
+class triangle {
+	public void tringle(int a,int b,int c) {
+		int area = (int) (0.5*a*b);
+		
+		int per = a+b+c;
+		
+	}
+}
+public class Trianglep {
+	public static void main(String[] args) {
+		
+	}
+}

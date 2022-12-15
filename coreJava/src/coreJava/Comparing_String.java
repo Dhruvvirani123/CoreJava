@@ -12,7 +12,6 @@ public class Comparing_String {
 //		System.out.println("Compare String Result in Boolean Value : "+s.equals(s1));
 		
 		
-		
 		//User input String and Compare String True ya False 
 		
 		System.out.print("Enter a String : ");
