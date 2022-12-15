@@ -1,0 +1,12 @@
+package coreJava;
+abstract class marks{
+	int mark1,mark2,mark3;
+	void D(int m1,int m2,int m3){
+		
+	}
+}
+public class StudentMarks {
+	public static void main(String[] args) {
+		
+	}
+}

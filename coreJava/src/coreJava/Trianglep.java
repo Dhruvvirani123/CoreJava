@@ -1,18 +1,17 @@
 package coreJava;
 
-class triangle {
-	public void tringle(int a,int b,int c) {
+class triangle1 {
+	 triangle1(int a,int b,int c) {
 		int area = (int) (0.5*a*b);
-		System.out.println("Area of Tringle : "+area+"\n");
+		System.out.print("Area of Tringle : "+area+"\n");
 		
 		int per = a+b+c;
-		System.out.println("Perimeter of Tringle : "+per+"\n");
+		System.out.print("Perimeter of Tringle : "+per);
 	}
 }
 public class Trianglep {
 	public static void main(String[] args) {
 		int a = 3, b = 4, c = 5;
-		
-		
+		triangle1 obj = new triangle1(a,b,c);
 	}
 }
