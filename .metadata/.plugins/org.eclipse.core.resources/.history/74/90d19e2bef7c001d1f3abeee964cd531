@@ -1,0 +1,35 @@
+package coreJava;
+
+import java.util.Scanner;
+
+public class grades {
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.print("Enter Marks : ");
+		int a = sc.nextInt();
+		
+		if(a<=100 && a>=91) {
+			System.out.println("A+ grade");
+		}
+		else if(a<=90 && a>=81) {
+			System.out.println("A grade");
+		}
+		else if(a<=80 && a>=71) {
+			System.out.println("B grade");
+		}
+		else if(a<=70 && a>=61) {
+			System.out.println("C grade");
+		}
+		else if(a<=60 && a>=51) {
+			System.out.println("D grade");
+		}
+		else if(a<=50 && a>=41) {
+			System.out.println("DD grade");
+		}
+		else{
+			System.out.println("Fail");
+		}
+	}
+}
