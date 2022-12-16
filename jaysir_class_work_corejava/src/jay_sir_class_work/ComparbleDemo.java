@@ -31,15 +31,7 @@ class TV implements Comparable<TV>{
 			return -1;
 		}
 	}
-	
-//	public int comString(TV d) {
-//		if(this.getcom()>d.getcom()) {
-//			return 1;
-//		}
-//		else {
-//			return -1;
-//		}
-//	}
+
 	
 public class ComparbleDemo {
 	public static void main(String[] args) {

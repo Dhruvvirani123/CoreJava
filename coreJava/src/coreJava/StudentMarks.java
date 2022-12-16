@@ -10,6 +10,7 @@ class A extends marks{
 		mar1 = m1;
 		mar2 = m2;
 		mar3 = m3;
+		
 	}
 	@Override
 	public float getPercentage() {
