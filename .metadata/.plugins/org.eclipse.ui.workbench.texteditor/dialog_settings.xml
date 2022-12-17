@@ -6,14 +6,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="Data"/>
 		<list key="findhistory">
+			<item value="data"/>
 			<item value="impliments"/>
 			<item value="swing"/>
 			<item value="dhruv"/>
 			<item value="b1"/>
 			<item value="virani"/>
-			<item value="data"/>
 			<item value="ActionEvent"/>
 			<item value="Username"/>
 			<item value="Password"/>

@@ -15,12 +15,11 @@ import javax.swing.JTextField;
 import com.mysql.cj.protocol.Resultset;
 import com.mysql.cj.xdevapi.Result;
 
-public class SwingDemoClass implements ActionListener 
-{
+public class SwingDemoClass implements ActionListener {
 	JButton b1, b2, b3, b4;
 	JLabel l1, l2, l3, l4, l5;
 	JTextField t1, t2, t3, t4, t5;
-	
+
 	public SwingDemoClass() {
 		JFrame dr = new JFrame("Demo");
 		dr.setVisible(true);
@@ -74,45 +73,47 @@ public class SwingDemoClass implements ActionListener
 		b4 = new JButton("Delete");
 		b4.setBounds(250, 350, 120, 20);
 		dr.add(b4);
-		
+
 		b1.addActionListener(this);
 		b2.addActionListener(this);
 		b3.addActionListener(this);
 		b4.addActionListener(this);
 	}
+
 	public static void main(String[] args) {
 		new SwingDemoClass();
 	}
-		public static Connection createConnection() {
+
+	public static Connection createConnection() {
 		Connection dv = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			dv = DriverManager.getConnection("jdbc:mysql://localhost:3306/dhruv","root","");
+			dv = DriverManager.getConnection("jdbc:mysql://localhost:3306/dhruv", "root", "");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return dv;
 	}
-		
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(e.getSource()==b1) {
+		if (e.getSource() == b1) {
 			System.out.println("insert button clicked");
 			int id = Integer.parseInt(t1.getText());
 			String name = t2.getText();
 			long contact = Long.parseLong(t3.getText());
 			String address = t4.getText();
 			String email = t5.getText();
-			System.out.println(id+name+contact+address+email);
+			System.out.println(id + name + contact + address + email);
 			try {
 				Connection conn = SwingDemoClass.createConnection();
-				String sql="insert into virani(id,name,contact,address,email) values(?,?,?,?,?)";
+				String sql = "insert into virani(id,name,contact,address,email) values(?,?,?,?,?)";
 				PreparedStatement pst = conn.prepareStatement(sql);
-				pst.setInt(1,id);
-				pst.setString(2,name);
-				pst.setLong(3,contact);
-				pst.setString(4,address);
-				pst.setString(5,email);
+				pst.setInt(1, id);
+				pst.setString(2, name);
+				pst.setLong(3, contact);
+				pst.setString(4, address);
+				pst.setString(5, email);
 
 				pst.executeUpdate();
 				System.out.println("virani inesrted");
@@ -121,12 +122,12 @@ public class SwingDemoClass implements ActionListener
 				t3.setText("");
 				t4.setText("");
 				t5.setText("");
-			} 
-				catch (Exception e2) {
+			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
-		}
-		else if(e.getSource()==b2) {
+			
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////			
+		} else if (e.getSource() == b2) {
 			System.out.println("search button clicked");
 			int id = Integer.parseInt(t1.getText());
 			try {
@@ -135,14 +136,14 @@ public class SwingDemoClass implements ActionListener
 				PreparedStatement pst = conn.prepareStatement(sql);
 				pst.setInt(1, id);
 				ResultSet dh = pst.executeQuery();
-				if(dh.next()) {
+				if (dh.next()) {
 					t1.setText(String.valueOf(dh.getInt("id")));
 					t2.setText(dh.getString("name"));
 					t3.setText(String.valueOf(dh.getLong("contact")));
 					t4.setText(dh.getString("address"));
 					t5.setText(dh.getString("email"));
-				}
-				else {
+				} else {
+					new PopUpSwing();
 					System.out.println("Data Not Found");
 					t1.setText("");
 					t2.setText("");
@@ -150,16 +151,57 @@ public class SwingDemoClass implements ActionListener
 					t4.setText("");
 					t5.setText("");
 				}
+			} catch (Exception e2) {
+				e2.printStackTrace();
 			}
-				catch (Exception e2) {
-					e2.printStackTrace();
-				}
-			}
-		else if(e.getSource()==b3) {
+			
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////			
+		} else if (e.getSource() == b3) {
 			System.out.println("update button clicked");
-		}
-		else if(e.getSource()==b4) {
+			int id = Integer.parseInt(t1.getText());
+			String name = t2.getText();
+			long contact = Long.parseLong(t3.getText());
+			String address = t4.getText();
+			String email = t5.getText();
+			try {
+				Connection conn = SwingDemoClass.createConnection();
+				String sql = "update virani set name=?,contact=?,address=?,email=? where id=?";
+				PreparedStatement pst = conn.prepareStatement(sql);
+				pst.setString(1, name);
+				pst.setLong(2, contact);
+				pst.setString(3, address);
+				pst.setString(4, email);
+				pst.setInt(5, id);
+				pst.executeUpdate();
+				System.out.println("data updated");
+				t1.setText("");
+				t2.setText("");
+				t3.setText("");
+				t4.setText("");
+				t5.setText("");
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+			
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+		} else if (e.getSource() == b4) {
 			System.out.println("delete button clicked");
+			int id = Integer.parseInt(t1.getText());
+			try {
+				Connection conn = SwingDemoClass.createConnection();
+				String sql = "delete from virani where id=?";
+				PreparedStatement pst = conn.prepareStatement(sql);
+				pst.setInt(1, id);
+				pst.executeUpdate();
+				System.out.println("data deleted");
+				t1.setText("");
+				t2.setText("");
+				t3.setText("");
+				t4.setText("");
+				t5.setText("");
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
 		}
 	}
 }
