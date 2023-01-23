@@ -12,67 +12,64 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-import com.mysql.cj.protocol.Resultset;
-import com.mysql.cj.xdevapi.Result;
-
-public class SwingDemoClass implements ActionListener {
+public class SwingDemo implements ActionListener {
 	JButton b1, b2, b3, b4;
 	JLabel l1, l2, l3, l4, l5;
 	JTextField t1, t2, t3, t4, t5;
 
-	public SwingDemoClass() {
-		JFrame dr = new JFrame("Demo");
-		dr.setVisible(true);
-		dr.setLayout(null);
-		dr.setSize(700, 500);
+	public SwingDemo() {
+		JFrame fr = new JFrame("MyApp");
+		fr.setVisible(true);
+		fr.setLayout(null);
+		fr.setSize(700, 500);
 
 		l1 = new JLabel("Id : ");
 		l1.setBounds(100, 100, 120, 20);
-		dr.add(l1);
+		fr.add(l1);
 		l2 = new JLabel("Name : ");
 		l2.setBounds(100, 130, 120, 20);
-		dr.add(l2);
+		fr.add(l2);
 		l3 = new JLabel("Contact : ");
 		l3.setBounds(100, 160, 120, 20);
-		dr.add(l3);
+		fr.add(l3);
 		l4 = new JLabel("Address : ");
 		l4.setBounds(100, 190, 120, 20);
-		dr.add(l4);
+		fr.add(l4);
 		l3 = new JLabel("Email : ");
 		l3.setBounds(100, 220, 120, 20);
-		dr.add(l3);
+		fr.add(l3);
 
 		t1 = new JTextField();
 		t1.setBounds(180, 100, 120, 20);
-		dr.add(t1);
+		fr.add(t1);
 		t2 = new JTextField();
 		t2.setBounds(180, 130, 120, 20);
-		dr.add(t2);
+		fr.add(t2);
 		t3 = new JTextField();
 		t3.setBounds(180, 160, 120, 20);
-		dr.add(t3);
+		fr.add(t3);
 		t4 = new JTextField();
 		t4.setBounds(180, 190, 120, 20);
-		dr.add(t4);
+		fr.add(t4);
 		t5 = new JTextField();
 		t5.setBounds(180, 220, 120, 20);
-		dr.add(t5);
+		fr.add(t5);
 
 		b1 = new JButton("Submit");
 		b1.setBounds(100, 300, 120, 20);
-		dr.add(b1);
+		fr.add(b1);
 
 		b2 = new JButton("Search");
 		b2.setBounds(250, 300, 120, 20);
-		dr.add(b2);
+		fr.add(b2);
 
 		b3 = new JButton("Update");
 		b3.setBounds(100, 350, 120, 20);
-		dr.add(b3);
+		fr.add(b3);
 
 		b4 = new JButton("Delete");
 		b4.setBounds(250, 350, 120, 20);
-		dr.add(b4);
+		fr.add(b4);
 
 		b1.addActionListener(this);
 		b2.addActionListener(this);
@@ -81,20 +78,20 @@ public class SwingDemoClass implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		new SwingDemoClass();
+		new SwingDemo();
 	}
 
 	public static Connection createConnection() {
-		Connection dv = null;
+		Connection conn = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			dv = DriverManager.getConnection("jdbc:mysql://localhost:3306/dhruv", "root", "");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/swing", "root", "");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return dv;
+		return conn;
 	}
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == b1) {
@@ -106,17 +103,18 @@ public class SwingDemoClass implements ActionListener {
 			String email = t5.getText();
 			System.out.println(id + name + contact + address + email);
 			try {
-				Connection conn = SwingDemoClass.createConnection();
-				String sql = "insert into virani(id,name,contact,address,email) values(?,?,?,?,?)";
+				Connection conn = SwingDemo.createConnection();
+				String sql = "insert into data(id,name,contact,address,email) values(?,?,?,?,?)";
 				PreparedStatement pst = conn.prepareStatement(sql);
 				pst.setInt(1, id);
 				pst.setString(2, name);
 				pst.setLong(3, contact);
 				pst.setString(4, address);
 				pst.setString(5, email);
-
+				// executeUpdate() -->DML(insert,update,delete)
+				// executeQuery() -->DQL(select)
 				pst.executeUpdate();
-				System.out.println("virani inesrted");
+				System.out.println("data inesrted");
 				t1.setText("");
 				t2.setText("");
 				t3.setText("");
@@ -125,26 +123,25 @@ public class SwingDemoClass implements ActionListener {
 			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
-			
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////			
 		} else if (e.getSource() == b2) {
 			System.out.println("search button clicked");
 			int id = Integer.parseInt(t1.getText());
 			try {
-				Connection conn = SwingDemoClass.createConnection();
-				String sql = "select * from virani where id=?";
+				Connection conn = SwingDemo.createConnection();
+				String sql = "select * from data where id=?";
 				PreparedStatement pst = conn.prepareStatement(sql);
-				pst.setInt(1, id);
-				ResultSet dh = pst.executeQuery();
-				if (dh.next()) {
-					t1.setText(String.valueOf(dh.getInt("id")));
-					t2.setText(dh.getString("name"));
-					t3.setText(String.valueOf(dh.getLong("contact")));
-					t4.setText(dh.getString("address"));
-					t5.setText(dh.getString("email"));
-				} else {
-					new PopUpSwing();
-					System.out.println("Data Not Found");
+				pst.setInt(1,id);
+				ResultSet rs = pst.executeQuery();
+				if(rs.next()) {
+					t1.setText(String.valueOf(rs.getInt("id")));
+					t2.setText(rs.getString("name"));
+					t3.setText(String.valueOf(rs.getLong("contact")));
+					t4.setText(rs.getString("address"));
+					t5.setText(rs.getString("email"));
+				}
+				else {
+					new PopUpWindow();
+					System.out.println("data not found");
 					t1.setText("");
 					t2.setText("");
 					t3.setText("");
@@ -152,10 +149,9 @@ public class SwingDemoClass implements ActionListener {
 					t5.setText("");
 				}
 			} catch (Exception e2) {
-				e2.printStackTrace();
+				// TODO: handle exception
 			}
 			
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////			
 		} else if (e.getSource() == b3) {
 			System.out.println("update button clicked");
 			int id = Integer.parseInt(t1.getText());
@@ -164,14 +160,14 @@ public class SwingDemoClass implements ActionListener {
 			String address = t4.getText();
 			String email = t5.getText();
 			try {
-				Connection conn = SwingDemoClass.createConnection();
-				String sql = "update virani set name=?,contact=?,address=?,email=? where id=?";
+				Connection conn = SwingDemo.createConnection();
+				String sql = "update data set name=?,contact=?,address=?,email=? where id=?";
 				PreparedStatement pst = conn.prepareStatement(sql);
-				pst.setString(1, name);
-				pst.setLong(2, contact);
-				pst.setString(3, address);
-				pst.setString(4, email);
-				pst.setInt(5, id);
+				pst.setString(1,name);
+				pst.setLong(2,contact);
+				pst.setString(3,address);
+				pst.setString(4,email);
+				pst.setInt(5,id);
 				pst.executeUpdate();
 				System.out.println("data updated");
 				t1.setText("");
@@ -182,16 +178,14 @@ public class SwingDemoClass implements ActionListener {
 			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
-			
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 		} else if (e.getSource() == b4) {
 			System.out.println("delete button clicked");
 			int id = Integer.parseInt(t1.getText());
 			try {
-				Connection conn = SwingDemoClass.createConnection();
-				String sql = "delete from virani where id=?";
+				Connection conn = SwingDemo.createConnection();
+				String sql = "delete from data where id=?";
 				PreparedStatement pst = conn.prepareStatement(sql);
-				pst.setInt(1, id);
+				pst.setInt(1,id);
 				pst.executeUpdate();
 				System.out.println("data deleted");
 				t1.setText("");
