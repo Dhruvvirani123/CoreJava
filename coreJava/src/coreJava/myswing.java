@@ -1,13 +1,12 @@
 package coreJava;
 
-import java.awt.Image;
-import java.awt.Toolkit;
-//import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -19,13 +18,11 @@ public class myswing implements ActionListener {
 	JTextField t1, t2;
 	JButton b1, b2;
 
-	public myswing() {
+	public myswing() {		
 		JFrame dhruv = new JFrame("MyApplication");
 		dhruv.setVisible(true);
 		dhruv.setLayout(null);
 		dhruv.setSize(400, 400);
-//		dhruv.getContentPane().setBackground(Color.yellow);
-		Image img = Toolkit.getDefaultToolkit().getImage("");
 
 		// Label
 		l1 = new JLabel("Username : ");
@@ -44,15 +41,14 @@ public class myswing implements ActionListener {
 		dhruv.add(t2);
 
 		// Button
-		b1 = new JButton("Login");
+		b1 = new JButton("Insert");
 		b1.setBounds(130, 182, 90, 20);
 		dhruv.add(b1);
-		b2 = new JButton("Forgot Password");
-		b2.setBounds(230, 182, 140, 20);
+		b2 = new JButton("Login");
+		b2.setBounds(240, 182, 90, 20);
 		dhruv.add(b2);
 
 		b1.addActionListener(this);
-		b2.addActionListener(this);
 
 	}
 
@@ -73,7 +69,7 @@ public class myswing implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource() == b1) {
+	if (e.getSource() == b1) {
 			System.out.println("Insert Button Clicked");
 			String Username = t1.getText();
 			String Password = t2.getText();
@@ -92,8 +88,29 @@ public class myswing implements ActionListener {
 			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
-		} else if (e.getSource() == b2) {
-			System.out.println("ForgotPassword Button Clicked");
-		}
+	}
+			else if (e.getSource() == b2) {
+				System.out.println("Login button clicked");
+				int Username = Integer.parseInt(t1.getText());
+				try {
+					Connection conn = myswing.createConnection();
+					String sql = "select * from data where Username=?";
+					PreparedStatement pst = conn.prepareStatement(sql);
+					pst.setInt(1, Username);
+					ResultSet dh = pst.executeQuery();
+					if (dh.next()) {
+						t1.setText(String.valueOf(dh.getInt("Username")));
+						t2.setText(dh.getString("Password"));
+					    } 
+						else {
+						new PopUpSwing();
+						System.out.println("Data Not Found");
+						t1.setText("");
+						t2.setText("");
+					}
+				} catch (Exception e2) {
+					e2.printStackTrace();
+				}
+	} 
 	}
 }

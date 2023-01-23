@@ -3,12 +3,9 @@ package jay_sir_class_work;
 public class StringDemo {
 	
 	public static void main(String[] args) {
-		@SuppressWarnings("unused")
-		String s ="hello java";
-		@SuppressWarnings("unused")
-		String s2 ="hello java";
-		@SuppressWarnings("unused")
-		String s1 ="hello java again";
+		String s ="Hello java";
+		String s2 ="Hello java";
+		String s1 ="Hello java again";
 		
 //		s1 = s1.toLowerCase();
 //		System.out.println(s1);
@@ -24,19 +21,19 @@ public class StringDemo {
 //		 letter = letter.replace("Name", "Dhruv Virani");
 //		 System.out.println(letter);
 		 
-		//System.out.println("length of string : "+s.length());
-//		System.out.println(s1.charAt(9));
+//		System.out.println("length of string : "+s1.length());
+//		System.out.println(s1.charAt(11));
 //		System.out.println(s.concat(s1));
 //		System.out.println(s);
-		//System.out.println(s.endsWith("a"));
+//		System.out.println(s.endsWith("a"));
 //		System.out.println(s.contains("ja"));
-		System.out.println(s.compareTo(s1));
-//		System.out.println(s.compareToIgnoreCase(s2));
-//		System.out.println(s.equals(s2));
+//		System.out.println(s.compareTo(s1));
+//		System.out.println(s1.compareToIgnoreCase(s2));
+//		System.out.println(s.equals(s1));
 //		System.out.println(s.equalsIgnoreCase(s2));
 //		System.out.println(s.isEmpty());
 //		System.out.println(s1.trim());
-//		System.out.println(s.codePointAt(0)); //ASCII printable characters
+		System.out.println(s.codePointAt(1)); //ASCII printable characters
 		
 		//String nonTrimmedString = "		Dhruv   ";
 		//System.out.println("length of string : "+nonTrimmedString.length());
