@@ -11,7 +11,6 @@ public class Array {
 			System.out.println(arr[i]);
 		}	
 
-		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter Size of Erray : ");
 		int size = sc.nextInt();

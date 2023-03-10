@@ -22,13 +22,13 @@ public class Game_kbc {
 		System.out.println("(4) Jainism");
 		System.out.println("");
 		System.out.print("Enter Answer : ");
-		int N = sc.nextInt();
+		int n = sc.nextInt();
 
 		int i;
 		for (i = 1; i <= 2; i++) {
 			switch (i) {
 			case 1:
-				if (N == 4) {
+				if (n == 4) {
 					System.out.println("Your answer is Absolute Right... you Win $.10000");
 					System.out.println("Next Question is in your Computer Screen...");
 					System.out.println("");

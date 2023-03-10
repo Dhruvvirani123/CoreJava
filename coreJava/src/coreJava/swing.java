@@ -6,8 +6,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.time.Year;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -119,7 +117,7 @@ public class swing implements ActionListener{
 				pst.setString(4, address);
 				pst.setString(5, email);
 				
-				pst.executeUpdate();
+				pst.executeUpdate(); 
 				t1.setText("");
 				t2.setText("");
 				t3.setText("");

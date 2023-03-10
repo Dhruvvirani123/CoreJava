@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Data"/>
+		<item key="selection" value="span"/>
 		<list key="findhistory">
+			<item value="span"/>
+			<item value="banner"/>
+			<item value="u"/>
 			<item value="data"/>
 			<item value="impliments"/>
 			<item value="swing"/>

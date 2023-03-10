@@ -28,12 +28,12 @@ public class StringDemo {
 //		System.out.println(s.endsWith("a"));
 //		System.out.println(s.contains("ja"));
 //		System.out.println(s.compareTo(s1));
-//		System.out.println(s1.compareToIgnoreCase(s2));
+		System.out.println(s.compareToIgnoreCase(s2));
 //		System.out.println(s.equals(s1));
 //		System.out.println(s.equalsIgnoreCase(s2));
 //		System.out.println(s.isEmpty());
 //		System.out.println(s1.trim());
-		System.out.println(s.codePointAt(1)); //ASCII printable characters
+//		System.out.println(s.codePointAt(1)); //ASCII printable characters
 		
 		//String nonTrimmedString = "		Dhruv   ";
 		//System.out.println("length of string : "+nonTrimmedString.length());
