@@ -1,4 +1,4 @@
-package Assiginment;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
@@ -18,7 +18,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class assiginmentfrom implements ActionListener {
+public class Assignment_Form implements ActionListener {
 
 	JLabel l1, l2, l3, l4, l5, l6;
 	JTextField t1, t2, t3, t4;
@@ -31,7 +31,7 @@ public class assiginmentfrom implements ActionListener {
 	JMenu m1,m2,m3,m4,m5,m6;
 	JMenuItem mi[];
 
-	assiginmentfrom() {
+	Assignment_Form() {
 		JFrame fr = new JFrame("Registration Form");
 		fr.setVisible(true);
 		fr.setSize(800, 800);
@@ -135,7 +135,7 @@ public class assiginmentfrom implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		new assiginmentfrom();
+		new Assignment_Form();
 	}
 
 	public static Connection createconnection() {
@@ -156,18 +156,18 @@ public class assiginmentfrom implements ActionListener {
 			int ID = Integer.parseInt(t1.getText());
 
 			try {
-				Connection connection = assiginmentfrom.createconnection();
-				String sql = "select * form where ID=?";
+				Connection connection = Assignment_Form.createconnection();
+				String sql = "select * from form where ID=?";
 				PreparedStatement pst = connection.prepareStatement(sql);
 
 				pst.setInt(1, ID);
-				ResultSet rs = pst.executeQuery();
+				ResultSet dv = pst.executeQuery();
 
-				if (rs.next()) {
-					t1.setText(String.valueOf(rs.getInt("ID")));
-					t2.setText(rs.getString("Name"));
-					t3.setText(rs.getString("Address"));
-					t4.setText(String.valueOf(rs.getLong("Contact")));
+				if (dv.next()) {
+					t1.setText(String.valueOf(dv.getInt("ID")));
+					t2.setText(dv.getString("Name"));
+					t3.setText(dv.getString("Address"));
+					t4.setText(String.valueOf(dv.getLong("Contact")));
 				} else {
 					System.out.println("Data Not Found.");
 					t1.setText("");
@@ -194,7 +194,7 @@ public class assiginmentfrom implements ActionListener {
 			long Contact = Long.parseLong(t4.getText());
 
 			try {
-				Connection connection = assiginmentfrom.createconnection();
+				Connection connection = Assignment_Form.createconnection();
 				String sql = "insert into form (ID,Name,Gender,Address,Contact) values (?,?,?,?,?)";
 				PreparedStatement pst = connection.prepareStatement(sql);
 
@@ -220,7 +220,7 @@ public class assiginmentfrom implements ActionListener {
 			int ID = Integer.parseInt(t1.getText());
 
 			try {
-				Connection connection = assiginmentfrom.createconnection();
+				Connection connection = Assignment_Form.createconnection();
 				String sql = "delete from form where id = ?";
 				PreparedStatement pst = connection.prepareStatement(sql);
 
@@ -251,7 +251,7 @@ public class assiginmentfrom implements ActionListener {
 			long Contact = Long.parseLong(t4.getText());
 
 			try {
-				Connection connection = assiginmentfrom.createconnection();
+				Connection connection = Assignment_Form.createconnection();
 				String sql = "update form set Name=?, Gender=?, Address=?,Contact=? where ID=?";
 				PreparedStatement pst = connection.prepareStatement(sql);
 
@@ -292,7 +292,7 @@ public class assiginmentfrom implements ActionListener {
 		else if (e.getSource()==m1) {
 			System.out.println("S.No. Button Clicked.");
 			try {
-				Connection connection = assiginmentfrom.createconnection();
+				Connection connection = Assignment_Form.createconnection();
 				String sql = "select S.No. from form";
 				PreparedStatement pst = connection.prepareStatement(sql);
 				
@@ -309,7 +309,7 @@ public class assiginmentfrom implements ActionListener {
 		else if (e.getSource()==m2) {
 			System.out.println("ID Button Clicked.");
 			try {
-				Connection connection = assiginmentfrom.createconnection();
+				Connection connection = Assignment_Form.createconnection();
 				String sql = "select ID from form";
 				PreparedStatement pst = connection.prepareStatement(sql);
 				
@@ -326,7 +326,7 @@ public class assiginmentfrom implements ActionListener {
 		else if (e.getSource()==m3) {
 			System.out.println("Name Button Clicked.");
 			try {
-				Connection connection = assiginmentfrom.createconnection();
+				Connection connection = Assignment_Form.createconnection();
 				String sql = "select Name from form";
 				PreparedStatement pst = connection.prepareStatement(sql);
 				
@@ -343,7 +343,7 @@ public class assiginmentfrom implements ActionListener {
 		else if (e.getSource()==m4) {
 			System.out.println("Gender Button Clicked.");
 			try {
-				Connection connection = assiginmentfrom.createconnection();
+				Connection connection = Assignment_Form.createconnection();
 				String sql = "select Gender from form";
 				PreparedStatement pst = connection.prepareStatement(sql);
 				
@@ -360,7 +360,7 @@ public class assiginmentfrom implements ActionListener {
 		else if (e.getSource()==m5) {
 			System.out.println("Address Button Clicked.");
 			try {
-				Connection connection = assiginmentfrom.createconnection();
+				Connection connection = Assignment_Form.createconnection();
 				String sql = "select Address from form";
 				PreparedStatement pst = connection.prepareStatement(sql);
 				
@@ -377,7 +377,7 @@ public class assiginmentfrom implements ActionListener {
 		else if (e.getSource()==m6) {
 			System.out.println("Contact Button Clicked.");
 			try {
-				Connection connection = assiginmentfrom.createconnection();
+				Connection connection = Assignment_Form.createconnection();
 				String sql = "select Contact from form";
 				PreparedStatement pst = connection.prepareStatement(sql);
 				
