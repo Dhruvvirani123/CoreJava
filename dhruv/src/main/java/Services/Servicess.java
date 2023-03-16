@@ -5,10 +5,10 @@ import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
+import javax.mail.internet.InternetAddress;z
 import javax.mail.internet.MimeMessage;
-public class Service {
-	public void sendMail(String emailid,int num){
+public class Servicess {
+	public void sendMail(String email,int num){
 		final String username  = "projectmanage57@gmail.com";
 		final String password  = "rkybtpvvyadixczx";
  
@@ -35,7 +35,7 @@ public class Service {
 			System.out.println("2");
 			message.setFrom(new InternetAddress(username));
 			System.out.println("3");
-			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse(emailid));
+			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse(email));
 			System.out.println("4");
 			message.setSubject("Hi This Is OPT Testing");
 			message.setText("Hello This Is OTP Testing Through Java. And Your OTp Is : "+num);

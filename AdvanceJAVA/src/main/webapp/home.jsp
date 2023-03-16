@@ -1,6 +1,6 @@
-<%@page import="Dao.CustomerDao"%>
+<%@page import="Dao.UserDao"%>
+<%@page import="Model.User"%>
 <%@page import="java.util.List"%>
-<%@page import="Model.Customer"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -19,29 +19,22 @@
 </head>
 <body>
 	<%
-	p
-
-			Customer d = null;
-			if (session.getAttribute("data") != null) {
-		d = (Customer) session.getAttribute("data");
-			} else {
+	User u = null;
+	if(session.getAttribute("data") != null){
+		u = (User) session.getAttribute("data");
+	}else{
 		response.sendRedirect("login.jsp");
-			}
+	}
+	
 	%>
 
-	Welcome,
-	Name :
-	<%=t(d.getName%>
-	Contact :
-	<%=t(d.getContact%>
-	Address :
-	<%=t(d.getAddress%>
-	Email :
-	<%=t(d.getEmail%>
-	Password :
-	<%=t(d.getPassword%>
-	
-	
+	Welcome, Name :	<%=u.getName() %>
+	Contact :	<%=u.getContact() %>
+	Address :	<%=u.getAddress() %>
+	Email :		<%=u.getEmail() %>
+	Password :	<%=u.getPassword() %>
+
+
 	<div class="container">
 		<table class="table">
 			<thead>
@@ -57,13 +50,11 @@
 				</tr>
 			</thead>
 			<%
-			p
-
-					List<Customer> list = CustomerDao.getallUsers();
+					List<User> list = UserDao.getallUsers();
 			%>
 			<tbody>
 				<%
-				for (Customer u2 : list) {
+				for (User u2 : list) {
 				%>
 				<tr>
 					<td><%=u2.getId()%></td>
@@ -72,17 +63,17 @@
 					<td><%=u2.getAddress()%></td>
 					<td><%=u2.getEmail()%></td>
 					<td><%=u2.getPassword()%></td>
-					
+
 					<td>
-						<form action = "UserController" method="post">
-							<input type="hidden" name="id" value="<%=u2.getId()%>">
-							<input type="submit" name="action" value="edit">
+						<form action="UserController" method="post">
+							<input type="hidden" name="id" value="<%=u2.getId()%>"> <input
+								type="submit" name="action" value="edit">
 						</form>
 					</td>
 					<td>
-						<form action = "UserController" method="post">
-						<input type="hidden" name="id" value="<%=u2.getId()%>">
-							<input type="submit" name="action" value="delete">
+						<form action="UserController" method="post">
+							<input type="hidden" name="id" value="<%=u2.getId()%>"> <input
+								type="submit" name="action" value="delete">
 						</form>
 					</td>
 				</tr>
@@ -92,7 +83,7 @@
 			</tbody>
 		</table>
 	</div>
-	
+
 	<h1 class="text-center">
 		<a href="logout.jsp">Logout...</a>
 	</h1>

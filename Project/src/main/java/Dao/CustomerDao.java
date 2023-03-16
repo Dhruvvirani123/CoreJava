@@ -4,15 +4,16 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import Connecation.DBConnection;
 import Model.Customer;
-import connection.DBConnection;
+
 
 public class CustomerDao {
 	public static void insertCustomer(Customer c) {
 		try {
-			Connection conn = DBConnection.createConnection();
+			Connection con = DBConnection.createConnection();
 			String sql="insert into customer(name,contact,address,email,password) values(?,?,?,?,?)";
-			PreparedStatement pst = conn.prepareStatement(sql);
+			PreparedStatement pst = con.prepareStatement(sql);
 			pst.setString(1, c.getName());
 			pst.setLong(2, c.getContact());
 			pst.setString(3, c.getAddress());

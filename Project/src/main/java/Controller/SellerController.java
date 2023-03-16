@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 	
 import Dao.SellerDao;
 import Model.Seller;
-import Services.Service;
+import Services.Servicess;
 
 @WebServlet("/SellerController")
 public class SellerController extends HttpServlet {
@@ -93,15 +93,16 @@ public class SellerController extends HttpServlet {
 		else if(action.equalsIgnoreCase("GET OTP")) {
 			String email = request.getParameter("email");
 			boolean flag = SellerDao.checkEmail(email);
+			System.out.println(flag);
 			if(flag == true) {
-				Service s = new Service();
+				Servicess s = new Servicess();
 				Random r = new Random();
-				int num = r.nextInt(999999);
+				int num = r.nextInt(9999);
 				System.out.println(num);
 				s.sendMail(email, num);
 				request.setAttribute("email", email);
 				request.setAttribute("otp", num);
-				request.getRequestDispatcher("seller-verify-otp.jsp").forward(request, response);
+				request.getRequestDispatcher("seller-verify-otp2.jsp").forward(request, response);
 			}
 			else {
 				
@@ -119,7 +120,7 @@ public class SellerController extends HttpServlet {
 				request.setAttribute("email", email);
 				request.setAttribute("otp", otp1);
 				request.setAttribute("msg", "otp not matched");
-				request.getRequestDispatcher("seller-verify-otp.jsp").forward(request, response);
+				request.getRequestDispatcher("seller-verify-otp2.jsp").forward(request, response);
 			}
 		}
 		else if(action.equalsIgnoreCase("Update Password")) {
@@ -133,7 +134,7 @@ public class SellerController extends HttpServlet {
 			else {	
 				request.setAttribute("msg", "np and cnp not matched");
 				request.setAttribute("email", email);
-				request.getRequestDispatcher("seller-verify-otp.jsp").forward(request, response);
+				request.getRequestDispatcher("seller-verify-otp2.jsp").forward(request, response);
 			}
 		}
 	}

@@ -48,6 +48,7 @@ public class UserDao {
 		}
 		return flag;
 	}
+	
 	public static User userlogin(User d) {
 		User user = null;
 		try {
@@ -96,6 +97,7 @@ public class UserDao {
 		}
 		return list;
 	}
+	
 	public static User getUserById(int id) {
 		User user = null;
 		try {

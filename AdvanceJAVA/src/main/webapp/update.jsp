@@ -1,4 +1,4 @@
-<%@page import="Model.Customer"%>
+<%@page import="Model.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -9,11 +9,10 @@
 </head>
 <body>
 <%
-p
- 
-	Customer u = null;	
-	if(request.getAttribute("data")!=null);
-	u = (Customer) request.getAttribute("data");
+	User u = null;	
+	if(request.getAttribute("data")!=null) {
+		u = (User) request.getAttribute("data");		
+	}
 %>
 	<form action="UserController" method="post">
 		<table>
