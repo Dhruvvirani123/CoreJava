@@ -58,7 +58,7 @@ public class ProductController extends HttpServlet {
 		String action = request.getParameter("action");
 		System.out.println(action);
 		if(action.equalsIgnoreCase("upload")){
-			String savePath = "C:\\Users\\DELL\\eclipse-workspace\\Project\\src\\main\\webapp\\lofer";   
+			String savePath = "C:\\Users\\DELL\\eclipse-workspace\\Project\\src\\main\\webapp\\images";   
 			File fileSaveDir=new File(savePath);
 	        if(!fileSaveDir.exists()){
 	            fileSaveDir.mkdir();
@@ -68,7 +68,7 @@ public class ProductController extends HttpServlet {
 		    file1.write(savePath + File.separator + fileName);
 		    String filePath= savePath + File.separator + fileName ;
 		    
-		    String savePath2 = "C:\\Users\\jay-pc\\JAVA MWF 8-30 to 9-30\\Project\\src\\main\\webapp\\image";
+		    String savePath2 = "C:\\Users\\DELL\\eclipse-workspace\\Project\\src\\main\\webapp\\images";
 	        File imgSaveDir=new File(savePath2);
 	        if(!imgSaveDir.exists()){
 	            imgSaveDir.mkdir();

@@ -26,7 +26,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		window.scrollTo(0, 1);
 	}
 </script>
-<!-- //Meta tag Keywords -->
+<!-- //Meta tag Keywords --> 
 
 <!-- Custom-Files -->
 <link rel="stylesheet" href="css/bootstrap.css">
@@ -62,7 +62,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								aria-hidden="true"></span>ootie</a>
 						</h1>
 					</div>
-
 					<label for="drop" class="toggle">Menu</label> <input
 						type="checkbox" id="drop" />
 					<ul class="menu mt-2">

@@ -97,7 +97,7 @@ public class SellerController extends HttpServlet {
 			if(flag == true) {
 				Servicess s = new Servicess();
 				Random r = new Random();
-				int num = r.nextInt(9999);
+				int num = r.nextInt(999999);
 				System.out.println(num);
 				s.sendMail(email, num);
 				request.setAttribute("email", email);

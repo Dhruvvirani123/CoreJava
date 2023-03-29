@@ -1,9 +1,8 @@
 package Model;
 
 public class Product {
-	private int pid,sid;
+	private int pid,sid,pprice;
 	private String image,pname,pcategory,pdesc;
-	private int pprice;
 	public int getPid() {
 		return pid;
 	}
