@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import Connecation.DBConnection;
 import Model.Product;
+import connection.DBConnection;
 
 public class ProductDao {
 	public static void uploadProduct(Product p) {

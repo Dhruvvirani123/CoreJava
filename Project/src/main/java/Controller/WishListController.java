@@ -1,4 +1,4 @@
-package Controller;
+ package Controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -15,8 +15,7 @@ import Model.wishlist;
  */
 @WebServlet("/wishlist")
 public class WishListController extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
+	private static final long serialVersionUID = 1L;   
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -24,7 +23,6 @@ public class WishListController extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -32,13 +30,12 @@ public class WishListController extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
-
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = request.getParameter("action");
-		if(action.equalsIgnoreCase("addtowishlist")) {
+		if(action.equalsIgnoreCase("addtoWishlist")) {
 			wishlist w = new wishlist();
 			w.setPid(Integer.parseInt(request.getParameter("pid")));
 			w.setCusid(Integer.parseInt(request.getParameter("cusid")));
@@ -46,5 +43,4 @@ public class WishListController extends HttpServlet {
 			response.sendRedirect("customer-home.jsp");
 		}
 	}
-
 }

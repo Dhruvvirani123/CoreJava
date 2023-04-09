@@ -4,10 +4,10 @@
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/	
+License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
-<!DOCTYPE html>	 
+<!DOCTYPE html>
 <html lang="zxx">
 
 <head>
@@ -22,12 +22,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	addEventListener("load", function() {
 		setTimeout(hideURLbar, 0);
 	}, false);
+
 	function hideURLbar() {
 		window.scrollTo(0, 1);
 	}
 </script>
-<!-- //Meta tag Keywords --> 
-
+<!-- //Meta tag Keywords -->
 <!-- Custom-Files -->
 <link rel="stylesheet" href="css/bootstrap.css">
 <!-- Bootstrap-Core-CSS -->
@@ -62,6 +62,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								aria-hidden="true"></span>ootie</a>
 						</h1>
 					</div>
+
 					<label for="drop" class="toggle">Menu</label> <input
 						type="checkbox" id="drop" />
 					<ul class="menu mt-2">
@@ -69,7 +70,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li><a href="about.html">About</a></li>
 						<li><a href="blog.html">Blog</a></li>
 						<li>
-							<!-- First Tier Drop Down --> <label for="drop-2" class="toggle">Drop
+							<!-- First Tier Drop Down --> <label for="drop-2" 	class="toggle">Drop
 								Down <span class="fa fa-angle-down" aria-hidden="true"></span>
 						</label> <a href="#">Register <span class="fa fa-angle-down"
 								aria-hidden="true"></span></a> <input type="checkbox" id="drop-2" />

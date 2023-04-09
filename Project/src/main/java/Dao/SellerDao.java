@@ -4,8 +4,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import Connecation.DBConnection;
+
 import Model.Seller;
+import connection.DBConnection;
 
 public class SellerDao {
 	public static void insertSeller(Seller s) {

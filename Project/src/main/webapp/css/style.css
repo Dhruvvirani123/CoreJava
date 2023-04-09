@@ -382,7 +382,7 @@ li > a:only-child:after {
 /*--/banner --*/
 
 .main-banner {
-    background: url(../images/banner.jpg)no-repeat center;
+    background: url("https://cdn.pixabay.com/photo/2018/10/13/05/25/shoes-men-3743524_960_720.jpg")no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

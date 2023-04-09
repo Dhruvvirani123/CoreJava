@@ -131,7 +131,7 @@ else{
 				<div class="col-md-4 product-men">
 					<div class="product-shoe-info shoe text-center">
 						<div class="men-thumb-item">
-							<img src="image/<%=p.getImage() %>" class="img-fluid" alt=""> <span
+							<img src="images/<%=p.getImage() %>" class="img-fluid" alt=""> <span
 								class="product-new-top">New</span>
 						</div>
 						<div class="item-info-product">

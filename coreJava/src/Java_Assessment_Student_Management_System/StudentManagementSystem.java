@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class Student {
-    private String Firstname;
+    private String Firstname,grade;
     private int id;
-    private int grade;
 
-    public Student(String name, int id, int grade) {
+    public Student(String name, int id, String grade) {
         this.Firstname = name;
         this.id = id;
         this.grade = grade;
@@ -22,11 +21,11 @@ class Student {
         return id;
     }
 
-    public int getGrade() {
+    public String getGrade() {
         return grade;
     }
 
-    public void setGrade(int grade) {
+    public void setGrade(String grade) {
         this.grade = grade;
     }
 }
@@ -45,11 +44,11 @@ class StudentManagement {
     public void displayAllStudents() {
         System.out.println("List of all students:");
         for (Student student : students) {
-            System.out.println(student.getName() + ", ID: " + student.getId() + ", Grade: " + student.getGrade());
+            System.out.println("Name : "+student.getName() + ", ID : " + student.getId() + ", Grade : " + student.getGrade());
         }
     }
 
-    public void updateStudentGrade(int id, int newGrade) {
+    public void updateStudentGrade(int id, String newGrade) {
         for (Student student : students) {
             if (student.getId() == id) {
                 student.setGrade(newGrade);
@@ -65,13 +64,13 @@ public class StudentManagementSystem {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\nStudent Management System");
+            System.out.println("\n Student Management System");
             System.out.println("1. Add student");
             System.out.println("2. Remove student");
             System.out.println("3. Display all students");
             System.out.println("4. Update student grade");
             System.out.println("5. Exit");
-            System.out.print("Enter your choice: ");
+            System.out.print("\nEnter your choice: ");
 
             int choice = scanner.nextInt();
 
@@ -82,7 +81,7 @@ public class StudentManagementSystem {
                     System.out.print("Enter student ID: ");
                     int id = scanner.nextInt();
                     System.out.print("Enter student grade: ");
-                    int grade = scanner.nextInt();
+                    String grade = scanner.next();
 
                     Student student = new Student(name, id, grade);
                     management.addStudent(student);
@@ -101,7 +100,7 @@ public class StudentManagementSystem {
                         }
                     }
                     break;
-
+                    	
                 case 3:
                     management.displayAllStudents();
                     break;
@@ -110,7 +109,7 @@ public class StudentManagementSystem {
                     System.out.print("Enter student ID: ");
                     int updateId = scanner.nextInt();
                     System.out.print("Enter new grade: ");
-                    int newGrade = scanner.nextInt();
+                    String newGrade = scanner.next();
 
                     management.updateStudentGrade(updateId, newGrade);
                     System.out.println("Grade updated successfully.");

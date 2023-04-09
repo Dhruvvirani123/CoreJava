@@ -1,4 +1,4 @@
-	package Controller;
+package Controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -14,13 +14,13 @@ import Model.customermodel;
  * Servlet implementation class CusstomerController
  */
 @WebServlet("/CusstomerController")
-public class CusstomerController extends HttpServlet {
+public class CustomerController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CusstomerController() {
+    public CustomerController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -38,7 +38,7 @@ public class CusstomerController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {{
 			String action = request.getParameter("action");
-			if (action.equalsIgnoreCase("tab-2")) {
+			if (action.equalsIgnoreCase("")) {
 				customermodel c  = new customermodel();
 				c.setUsername(request.getParameter("Username"));
 				c.setPassword(request.getParameter("Password"));
@@ -48,5 +48,4 @@ public class CusstomerController extends HttpServlet {
 			}
 		}
 	}
-
 }

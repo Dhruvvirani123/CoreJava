@@ -6,8 +6,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="height"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="link"/>
+			<item value="main"/>
+			<item value="Login"/>
+			<item value="modern"/>
+			<item value="mod"/>
+			<item value=" "/>
 			<item value="height"/>
 			<item value="FREE SHIPPING"/>
 			<item value="login-wrap"/>
@@ -17,14 +23,9 @@
 			<item value="lable"/>
 			<item value="register"/>
 			<item value="doGet"/>
-			<item value="JAMES DEW"/>
-			<item value="span"/>
-			<item value="banner"/>
-			<item value="u"/>
-			<item value="data"/>
-			<item value="impliments"/>
 		</list>
 		<list key="replacehistory">
+			<item value=" "/>
 			<item value="virani"/>
 			<item value="Username"/>
 			<item value="Password"/>
