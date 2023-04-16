@@ -1,3 +1,4 @@
+<%@page import="Model.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
@@ -46,6 +47,17 @@
 </head>
 
 <body>
+
+<%
+User p = null;
+	if(session.getAttribute("data") != null){
+		p = (User)session.getAttribute("data");
+	}
+	else{
+		response.sendRedirect("Patient-Login.jsp");
+	}
+%>
+
 	<!-- header -->
 	<header>
 		<!-- top-bar -->
@@ -86,7 +98,7 @@
 							</div>
 							<div class="col-lg-5 col-6 header-w3layouts pl-4 text-lg-left">
 								<p class="text-white">
-									<i class="fas fa-phone mr-2"></i>+91 9624360699
+									<i class="fas fa-phone mr-2"></i>+91 7046970488
 								</p>
 							</div>
 						</div>
@@ -117,37 +129,35 @@
 						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse text-center"
-						id="navbarSupportedContent">
+					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-lg-auto">
-							<li class="nav-item mt-lg-0 mt-3"><a class="nav-link"
-								href="Index.jsp">Home <span class="sr-only">(current)</span>
-							</a></li>
-							<li class="nav-item mx-lg-4 my-lg-0 my-3"><a
-								class="nav-link" href="about.html">About Us</a></li>
-							<li class="nav-item dropdown"><a
-								class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-								role="button" data-toggle="dropdown" aria-haspopup="true"
-								aria-expanded="false"> Pages </a>
+							<li class="nav-item mt-lg-0 mt-3">
+								<a class="nav-link" href="Patient-Home.jsp">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item mx-lg-4 my-lg-0 my-3">
+								<a class="nav-link" href="about.html">About Us</a>
+							</li>
+							<li class="nav-item mx-lg-4 my-lg-0 my-3">
+								<a class="nav-link" href="#">Cases History</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=p.getFisrtName() %> <%=p.getLastName() %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-									<a class="dropdown-item" href="index.html">Services</a> <a
-										class="dropdown-item" href="gallery.html">Gallery</a> <a
-										class="dropdown-item" href="index.html">Blog</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="single.html">Single Page</a>
-								</div></li>
-							<li class="nav-item mx-lg-4 my-lg-0 my-3"><a
-								class="nav-link" href="appointment.html">Appointment</a></li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact
-									Us</a></li>
+									<a class="dropdown-item active" href="Patient-Profile.jsp">Profile</a>
+									<a class="dropdown-item" href="Patient-Change-Password.jsp">Change-Password</a>
+								</div>
+							</li>
 						</ul>
-						<!-- login -->
-						<a href="Patient-Registration.jsp"
-							class="login-button ml-lg-5 mt-lg-0 mt-4 mb-lg-0 mb-3"> <i
-							class="fas fa-sign-in-alt mr-2"></i>Register
-						</a>
-						<!-- //login -->
+						<!-- Appointment -->
+							<a href="#" class="login-button ml-lg-5 mt-lg-0 mt-4 mb-lg-0 mb-3">
+							<i class="fas fa-sign-in-alt mr-2"></i>Appointment</a>
+						<!-- //Appointment -->
+						<!-- Logout -->
+							<a href="Patient-Logout.jsp" class="login-button ml-lg-5 mt-lg-0 mt-4 mb-lg-0 mb-3">
+							<i class="fas fa-sign-in-alt mr-2"></i>Logout</a>
+						<!-- //Logout -->
 					</div>
 				</div>
 			</nav>
@@ -166,7 +176,7 @@
 		<div aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="Index.jsp">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Verify-OTP</li>
+				<li class="breadcrumb-item active" aria-current="page">Profile</li>
 			</ol>
 		</div>
 	</div>
@@ -178,40 +188,45 @@
 	<div class="appointment py-5">
 		<div class="py-xl-5 py-lg-3">
 			<div class="w3ls-titles text-center mb-5">
-				<h3 class="title">Forgot Password</h3>
+				<h3 class="title"><%=p.getFisrtName()%> <%=p.getLastName()%>'s Profile</h3>
 				<span>
 					<i class="fas fa-user-md"></i>
 				</span>
 			</div>
-			
 			<div class="d-flex">
 				<div class="appoint-img">
 
 				</div>
 				<div class="contact-right-w3l appoint-form">
-					<h5 class="title-w3 text-center mb-5">Fill Your Forgot Password form</h5>
-					
-					<h6 class="title-w3 text-center mb-5">		
-					<% String msg = (String) request.getAttribute("msg"); %>
-					<% if(msg != null){ %>
-					<% out.print(msg); %>
-					<%} %>
-					</h6>
-					
-					<% String Email = (String)request.getAttribute("Email"); %>
-					<% int OTP1 = (Integer)request.getAttribute("OTP"); %>
-					
+					<h5 class="title-w3 text-center mb-5">Fill Your Profile Update form</h5>
 					<form action="PatientController" method="post">
-					
-						<input type="hidden" name="Email" value="<%=Email%>">
-						<input type="hidden" name="OTP1" value="<%=OTP1%>">
-						
+						<input type="hidden" name="ID" value="<%=p.getID() %>">
 						<div class="form-group">
-							<label for="recipient-name" class="col-form-label">Enter OTP</label>
-							<input type="text" class="form-control" placeholder="Enter OTP" name="OTP2" required="">
+							<label for="recipient-name" class="col-form-label">Enter Firstname</label>
+							<input type="text" class="form-control" value="<%=p.getFisrtName() %>" name="FirstName" required="">
 						</div>
-						<div class="form-group text-center">
-							<input type="submit" class="btn_apt" name="action" value="Verify">
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Enter Surname</label>
+							<input type="text" class="form-control" value="<%=p.getLastName() %>" name="LastName" required="">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Enter Gender</label>
+							<input type="text" class="form-control" value="<%=p.getGender() %>" name="Gender" required="">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Enter Address</label>
+							<input type="text" class="form-control" value="<%=p.getAddress() %>" name="Address" required="">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Enter Mobile</label>
+							<input type="tel" class="form-control" value="<%=p.getMobile() %>" name="Mobile" required="">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Enter Email</label>
+							<input type="email" class="form-control" value="<%=p.getEmail() %>" name="Email" required="">
+						</div>
+						<div class="form-group text-center">	
+							<input type="submit" class="btn_apt" name="action" value="Update"> 
 						</div>
 					</form>
 				</div>
@@ -268,8 +283,8 @@
 					</div>
 				</div>
 				<div class="border-top mt-5 pt-lg-4 pt-3 pb-lg-0 pb-3 text-center">
-					<p class="copy-right-grids mt-lg-1">© 2023 MEDIC | All Rights
-						Reserved | Design by DK</p>
+					<p class="copy-right-grids mt-lg-1">© 2023 D.PATEL | All Rights
+						Reserved | Design by DV</p>
 				</div>
 			</div>
 		</div>

@@ -101,7 +101,7 @@ User p = null;
 							</div>
 							<div class="col-lg-5 col-6 header-w3layouts pl-4 text-lg-left">
 								<p class="text-white">
-									<i class="fas fa-phone mr-2"></i>+91 9624360699</p>
+									<i class="fas fa-phone mr-2"></i>+91 7046970488</p>
 							</div>
 						</div>
 					</div>
@@ -610,7 +610,7 @@ User p = null;
 					</div>
 				</div>
 				<div class="border-top mt-5 pt-lg-4 pt-3 pb-lg-0 pb-3 text-center">
-					<p class="copy-right-grids mt-lg-1">© 2023 MEDIC | All Rights Reserved | Design by DK</p>
+					<p class="copy-right-grids mt-lg-1">© 2023 D.PATEL | All Rights Reserved | Design by DV</p>
 				</div>
 			</div>
 		</div>

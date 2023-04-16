@@ -143,9 +143,9 @@
 									Us</a></li>
 						</ul>
 						<!-- login -->
-						<a href="Patient-Registration.jsp"
+						<a href="Patient-Login.jsp"
 							class="login-button ml-lg-5 mt-lg-0 mt-4 mb-lg-0 mb-3"> <i
-							class="fas fa-sign-in-alt mr-2"></i>Register
+							class="fas fa-sign-in-alt mr-2"></i>Login
 						</a>
 						<!-- //login -->
 					</div>
@@ -166,7 +166,7 @@
 		<div aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="Index.jsp">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Forgot Password</li>
+				<li class="breadcrumb-item active" aria-current="page">Registration</li>
 			</ol>
 		</div>
 	</div>
@@ -178,36 +178,50 @@
 	<div class="appointment py-5">
 		<div class="py-xl-5 py-lg-3">
 			<div class="w3ls-titles text-center mb-5">
-				<h3 class="title">Forgot Password</h3>
+				<h3 class="title">Registration</h3>
 				<span>
 					<i class="fas fa-user-md"></i>
 				</span>
 			</div>
-			
 			<div class="d-flex">
 				<div class="appoint-img">
 
 				</div>
 				<div class="contact-right-w3l appoint-form">
-					<h5 class="title-w3 text-center mb-5">Fill Your Forgot Password form</h5>
-					
-					<h6 class="title-w3 text-center mb-5">		
-					<% String msg = (String) request.getAttribute("msg"); %>
-					<% if(msg != null){ %>
-					<% out.print(msg); %>
-					<%} %>
-					</h6>
-					
+					<h5 class="title-w3 text-center mb-5">Fill Your Registration form</h5>
 					<form action="PatientController" method="post">
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Enter Firstname</label>
+							<input type="text" class="form-control" placeholder="Your Firstname " name="FirstName" required="">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Enter Surname</label>
+							<input type="text" class="form-control" placeholder="Your Surname " name="LastName" required="">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Enter Gender</label>
+							<input type="text" class="form-control" placeholder="Your Gender " name="Gender" required="">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Enter Address</label>
+							<input type="text" class="form-control" placeholder="Your Address " name="Address" required="">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Enter Mobile</label>
+							<input type="tel" class="form-control" placeholder="Your Mobile " name="Mobile" required="">
+						</div>
 						<div class="form-group">
 							<label for="recipient-name" class="col-form-label">Enter Email</label>
 							<input type="email" class="form-control" placeholder="Your Email " name="Email" required="">
 						</div>
-						<div class="form-group text-center">
-							<input type="submit" class="btn_apt" name="action" value="GET OTP">
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Enter Password</label>
+							<input type="password" class="form-control" placeholder="Your Password " name="Password" required="">
+						</div>
+						<div class="form-group text-center">	
+							<input type="submit" class="btn_apt" name="action" value="Register"> 
 						</div>
 					</form>
-					<br>
 				</div>
 				<div class="clerafix"></div>
 			</div>
@@ -240,10 +254,10 @@
 								<p class="ml-4">Bims Hospital, Kala Nala, Bhavnagar.</p>
 								<div class="clearfix"></div></li>
 							<li class="my-3"><i class="fas fa-phone float-left"></i>
-								<p class="ml-4">+91 9624360699</p>
+								<p class="ml-4">+91 7046970488</p>
 								<div class="clearfix"></div></li>
 							<li><i class="far fa-envelope-open float-left"></i> <a
-								href="mailto:dkwebdeveloper9@gmail.com" class="ml-3">dkwebdeveloper9@gmail.com</a>
+								href="mailto:dkwebdeveloper9@gmail.com" class="ml-3">projectmanagement656@gmail.com</a>
 								<div class="clearfix"></div></li>
 						</ul>
 					</div>
@@ -262,8 +276,8 @@
 					</div>
 				</div>
 				<div class="border-top mt-5 pt-lg-4 pt-3 pb-lg-0 pb-3 text-center">
-					<p class="copy-right-grids mt-lg-1">© 2023 MEDIC | All Rights
-						Reserved | Design by DK</p>
+					<p class="copy-right-grids mt-lg-1">© 2023 D.PATEL | All Rights
+						Reserved | Design by DV</p>
 				</div>
 			</div>
 		</div>

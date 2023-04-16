@@ -86,7 +86,7 @@
 							</div>
 							<div class="col-lg-5 col-6 header-w3layouts pl-4 text-lg-left">
 								<p class="text-white">
-									<i class="fas fa-phone mr-2"></i>+91 9624360699
+									<i class="fas fa-phone mr-2"></i>+91 7046970488
 								</p>
 							</div>
 						</div>
@@ -166,7 +166,7 @@
 		<div aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="Index.jsp">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Login</li>
+				<li class="breadcrumb-item active" aria-current="page">New-Password</li>
 			</ol>
 		</div>
 	</div>
@@ -178,7 +178,7 @@
 	<div class="appointment py-5">
 		<div class="py-xl-5 py-lg-3">
 			<div class="w3ls-titles text-center mb-5">
-				<h3 class="title">Login</h3>
+				<h3 class="title">Forgot Password</h3>
 				<span>
 					<i class="fas fa-user-md"></i>
 				</span>
@@ -189,7 +189,7 @@
 
 				</div>
 				<div class="contact-right-w3l appoint-form">
-					<h5 class="title-w3 text-center mb-5">Fill Your Login form</h5>
+					<h5 class="title-w3 text-center mb-5">Fill Your Forgot Password form</h5>
 					
 					<h6 class="title-w3 text-center mb-5">		
 					<% String msg = (String) request.getAttribute("msg"); %>
@@ -199,20 +199,22 @@
 					</h6>
 					
 					<form action="PatientController" method="post">
+						
+						<%String Email = (String)request.getAttribute("Email"); %>
+						<input type="hidden" name="Email" value="<%=Email%>">
+						
 						<div class="form-group">
-							<label for="recipient-name" class="col-form-label">Enter Email</label>
-							<input type="email" class="form-control" placeholder="Your Email " name="Email" required="">
+							<label for="recipient-name" class="col-form-label">New Password</label>
+							<input type="password" class="form-control" placeholder="New Password " name="NP" required="">
 						</div>
 						<div class="form-group">
-							<label for="recipient-name" class="col-form-label">Enter Password</label>
-							<input type="password" class="form-control" placeholder="Your Password " name="Password" required="">
+							<label for="recipient-name" class="col-form-label">Conform New Password</label>
+							<input type="password" class="form-control" placeholder="Conform New Password " name="CNP" required="">
 						</div>
 						<div class="form-group text-center">
-							<input type="submit" class="btn_apt" name="action" value="Login">
+							<input type="submit" class="btn_apt" name="action" value="Update Password">
 						</div>
 					</form>
-					<br>
-					<h4 class="text-center"><a href="Patient-Forgot-Password.jsp">Forgot Password?</a></h4>
 				</div>
 				<div class="clerafix"></div>
 			</div>
@@ -267,8 +269,8 @@
 					</div>
 				</div>
 				<div class="border-top mt-5 pt-lg-4 pt-3 pb-lg-0 pb-3 text-center">
-					<p class="copy-right-grids mt-lg-1">© 2023 MEDIC | All Rights
-						Reserved | Design by DK</p>
+					<p class="copy-right-grids mt-lg-1">© 2023 D.PATEL | All Rights
+						Reserved | Design by DV</p>
 				</div>
 			</div>
 		</div>

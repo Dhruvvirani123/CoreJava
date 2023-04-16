@@ -42,7 +42,7 @@ public class UserController extends HttpServlet {
 
 			UserDao.insertPatient(p);
 			request.setAttribute("msg", "Account Registered Succesfully");
-			request.getRequestDispatcher("Patient-Login.jsp").forward(request, response);
+			request.getRequestDispatcher("user-Login.jsp").forward(request, response);
 		}
 
 		else if (action.equalsIgnoreCase("Login")) {
@@ -57,7 +57,7 @@ public class UserController extends HttpServlet {
 			} else {
 				HttpSession session = request.getSession();
 				session.setAttribute("data", p1);
-				request.getRequestDispatcher("Patient-Home.jsp").forward(request, response);
+				request.getRequestDispatcher("user-Home.jsp").forward(request, response);
 			}
 		}
 
@@ -74,7 +74,7 @@ public class UserController extends HttpServlet {
 			UserDao.updateProfile(p);
 			HttpSession session = request.getSession();
 			session.setAttribute("data", p);
-			request.getRequestDispatcher("Patient-Home.jsp").forward(request, response);
+			request.getRequestDispatcher("user-Home.jsp").forward(request, response);
 		}
 
 		else if (action.equalsIgnoreCase("Change Password")) {
@@ -89,7 +89,7 @@ public class UserController extends HttpServlet {
 			if (flag == true) {
 				if (NP.equals(CNP)) {
 					UserDao.changePassword(ID, NP);
-					response.sendRedirect("Patient-Home.jsp");
+					response.sendRedirect("user-Home.jsp");
 				} else {
 					request.setAttribute("msg1", "New Password and Confirm New Password Doesn't Matched.");
 					request.getRequestDispatcher("Patient-Change-Password.jsp").forward(request, response);
@@ -113,7 +113,7 @@ public class UserController extends HttpServlet {
 
 				request.setAttribute("Email", Email);
 				request.setAttribute("OTP", num);
-				request.getRequestDispatcher("Patient-Verify-OTP.jsp").forward(request, response);
+				request.getRequestDispatcher("user-Verify-OTP.jsp").forward(request, response);
 			}
 		}
 
@@ -124,12 +124,12 @@ public class UserController extends HttpServlet {
 
 			if (OTP1 == OTP2) {
 				request.setAttribute("Email", Email);
-				request.getRequestDispatcher("Patient-New-Password.jsp").forward(request, response);
+				request.getRequestDispatcher("user-New-Password.jsp").forward(request, response);
 			} else {
 				request.setAttribute("Email", Email);
 				request.setAttribute("OTP", OTP1);
 				request.setAttribute("msg", "OTP Not Matched.");
-				request.getRequestDispatcher("Patient-Verify-OTP.jsp").forward(request, response);
+				request.getRequestDispatcher("user-Verify-OTP.jsp").forward(request, response);
 			}
 		}
 
@@ -144,7 +144,7 @@ public class UserController extends HttpServlet {
 			} else {
 				request.setAttribute("msg", "New Pssword and Confirm New Password are Not matched.");
 				request.setAttribute("Email", Email);
-				request.getRequestDispatcher("Patient-New-Password.jsp").forward(request, response);
+				request.getRequestDispatcher("user-New-Password.jsp").forward(request, response);
 			}
 		}
 	}

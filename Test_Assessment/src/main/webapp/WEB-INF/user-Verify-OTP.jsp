@@ -81,12 +81,12 @@
 							<div class="col-lg-7 col-6 top-w3layouts">
 								<p class="text-white">
 									<i class="far fa-envelope-open mr-2"></i><a
-										href="mailto:dkwebdeveloper9@gmail.com" class="text-white">dkwebdeveloper9@gmail.com</a>
+										href="mailto:dkwebdeveloper9@gmail.com" class="text-white">projectmanagement656@gmail.com</a>
 								</p>
 							</div>
 							<div class="col-lg-5 col-6 header-w3layouts pl-4 text-lg-left">
 								<p class="text-white">
-									<i class="fas fa-phone mr-2"></i>+91 9624360699
+									<i class="fas fa-phone mr-2"></i>+91 7046970488
 								</p>
 							</div>
 						</div>
@@ -166,7 +166,7 @@
 		<div aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="Index.jsp">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">New-Password</li>
+				<li class="breadcrumb-item active" aria-current="page">Verify-OTP</li>
 			</ol>
 		</div>
 	</div>
@@ -198,21 +198,20 @@
 					<%} %>
 					</h6>
 					
+					<% String Email = (String)request.getAttribute("Email"); %>
+					<% int OTP1 = (Integer)request.getAttribute("OTP"); %>
+					
 					<form action="PatientController" method="post">
-						
-						<%String Email = (String)request.getAttribute("Email"); %>
+					
 						<input type="hidden" name="Email" value="<%=Email%>">
+						<input type="hidden" name="OTP1" value="<%=OTP1%>">
 						
 						<div class="form-group">
-							<label for="recipient-name" class="col-form-label">New Password</label>
-							<input type="password" class="form-control" placeholder="New Password " name="NP" required="">
-						</div>
-						<div class="form-group">
-							<label for="recipient-name" class="col-form-label">Conform New Password</label>
-							<input type="password" class="form-control" placeholder="Conform New Password " name="CNP" required="">
+							<label for="recipient-name" class="col-form-label">Enter OTP</label>
+							<input type="text" class="form-control" placeholder="Enter OTP" name="OTP2" required="">
 						</div>
 						<div class="form-group text-center">
-							<input type="submit" class="btn_apt" name="action" value="Update Password">
+							<input type="submit" class="btn_apt" name="action" value="Verify">
 						</div>
 					</form>
 				</div>
@@ -269,8 +268,8 @@
 					</div>
 				</div>
 				<div class="border-top mt-5 pt-lg-4 pt-3 pb-lg-0 pb-3 text-center">
-					<p class="copy-right-grids mt-lg-1">© 2023 MEDIC | All Rights
-						Reserved | Design by DK</p>
+					<p class="copy-right-grids mt-lg-1">© 2023 D.PATEL | All Rights
+						Reserved | Design by DV</p>
 				</div>
 			</div>
 		</div>
