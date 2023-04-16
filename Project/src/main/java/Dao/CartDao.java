@@ -54,7 +54,7 @@ public class CartDao {
 					list.add(c);
 				}
 			} catch (Exception e) {
-				e.printStackTrace();
+				e.printStackTrace(); 
 			}
 			return list;
 		}

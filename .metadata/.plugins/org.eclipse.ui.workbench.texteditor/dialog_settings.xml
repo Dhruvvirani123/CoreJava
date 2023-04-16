@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="input"/>
 		<list key="findhistory">
+			<item value="input"/>
+			<item value="register"/>
+			<item value="https://i.ibb.co/Pcg0Pk1/logo.png"/>
+			<item value="assets/img/logo.png"/>
+			<item value="shop"/>
 			<item value="link"/>
 			<item value="main"/>
 			<item value="Login"/>
@@ -18,11 +23,6 @@
 			<item value="FREE SHIPPING"/>
 			<item value="login-wrap"/>
 			<item value="navbar-brand"/>
-			<item value="tab2"/>
-			<item value="label"/>
-			<item value="lable"/>
-			<item value="register"/>
-			<item value="doGet"/>
 		</list>
 		<list key="replacehistory">
 			<item value=" "/>
