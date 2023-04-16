@@ -11,7 +11,7 @@ public class UserDao {
 	public static void insertPatient(User p) {
 		try {
 			Connection conn = DBConnection.createConnection();
-			String sql = "insert into patient (FirstName, Lastname, Gender, Address, Mobile, Email, Password) values (?,?,?,?,?,?,?)";
+			String sql = "insert into Test (FirstName, Lastname, Gender, Address, Mobile, Email, Password) values (?,?,?,?,?,?,?)";
 			PreparedStatement pst = conn.prepareStatement(sql);
 
 			pst.setString(1, p.getFisrtName());
@@ -33,7 +33,7 @@ public class UserDao {
 		User p1 = null;
 		try {
 			Connection conn = DBConnection.createConnection();
-			String sql = "select * from patient where Email = ? and Password = ?";
+			String sql = "select * from Test where Email = ? and Password = ?";
 			PreparedStatement pst = conn.prepareStatement(sql);
 
 			pst.setString(1, p.getEmail());
@@ -60,7 +60,7 @@ public class UserDao {
 	public static void updateProfile(User p) {
 		try {
 			Connection conn = DBConnection.createConnection();
-			String sql = "update patient set FirstName=?, LastName=?, Gender=?, Address=?, Mobile=?, Email = ? where ID= ?";
+			String sql = "update Test set FirstName=?, LastName=?, Gender=?, Address=?, Mobile=?, Email = ? where ID= ?";
 			PreparedStatement pst = conn.prepareStatement(sql);
 
 			pst.setString(1, p.getFisrtName());
@@ -82,7 +82,7 @@ public class UserDao {
 		boolean flag = false;
 		try {
 			Connection conn = DBConnection.createConnection();
-			String sql = "select * from patient where ID=? and Password =?";
+			String sql = "select * from Test where ID=? and Password =?";
 			PreparedStatement pst = conn.prepareStatement(sql);
 
 			pst.setInt(1, ID);
@@ -101,7 +101,7 @@ public class UserDao {
 	public static void changePassword(int ID, String NP) {
 		try {
 			Connection conn = DBConnection.createConnection();
-			String sql = "update patient set Password = ? where ID = ?";
+			String sql = "update Test set Password = ? where ID = ?";
 			PreparedStatement pst = conn.prepareStatement(sql);
 
 			pst.setString(1, NP);
@@ -117,7 +117,7 @@ public class UserDao {
 		boolean flag = false;
 		try {
 			Connection conn = DBConnection.createConnection();
-			String sql = "select * from patient where Email=?";
+			String sql = "select * from Test where Email=?";
 			PreparedStatement pst = conn.prepareStatement(sql);
 
 			pst.setString(1, Email);
@@ -134,7 +134,7 @@ public class UserDao {
 	public static void changeNewPassword(String Email, String NP) {
 		try {
 			Connection conn = DBConnection.createConnection();
-			String sql = "update patient set Password =? where Email = ?";
+			String sql = "update Test set Password =? where Email = ?";
 			PreparedStatement pst = conn.prepareStatement(sql);
 
 			pst.setString(1, NP);
