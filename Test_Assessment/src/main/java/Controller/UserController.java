@@ -14,7 +14,7 @@ import Dao.UserDao;
 import Model.User;
 import Service.Servicess;
 
-@WebServlet("/PatientController")
+@WebServlet("/Controller")
 public class UserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -40,7 +40,7 @@ public class UserController extends HttpServlet {
 			p.setEmail(request.getParameter("Email"));
 			p.setPassword(request.getParameter("Password"));
 
-			UserDao.insertPatient(p);
+			UserDao.insertuser(p);
 			request.setAttribute("msg", "Account Registered Succesfully");
 			request.getRequestDispatcher("user-Login.jsp").forward(request, response);
 		}
@@ -50,10 +50,10 @@ public class UserController extends HttpServlet {
 			p.setEmail(request.getParameter("Email"));
 			p.setPassword(request.getParameter("Password"));
 
-			User p1 = UserDao.loginPatient(p);
+			User p1 = UserDao.loginuser(p);
 			if (p1 == null) {
 				request.setAttribute("msg", "Password is Incorrect");
-				request.getRequestDispatcher("Patient-Login.jsp").forward(request, response);
+				request.getRequestDispatcher("user-Login.jsp").forward(request, response);
 			} else {
 				HttpSession session = request.getSession();
 				session.setAttribute("data", p1);
@@ -92,11 +92,11 @@ public class UserController extends HttpServlet {
 					response.sendRedirect("user-Home.jsp");
 				} else {
 					request.setAttribute("msg1", "New Password and Confirm New Password Doesn't Matched.");
-					request.getRequestDispatcher("Patient-Change-Password.jsp").forward(request, response);
+					request.getRequestDispatcher("user-Change-Password.jsp").forward(request, response);
 				}
 			} else {
 				request.setAttribute("msg", "Old Password Incorrect.");
-				request.getRequestDispatcher("Patient-Change-Password.jsp").forward(request, response);
+				request.getRequestDispatcher("user-Change-Password.jsp").forward(request, response);
 			}
 		}
 
@@ -140,7 +140,7 @@ public class UserController extends HttpServlet {
 
 			if (NP.equals(CNP)) {
 				UserDao.changeNewPassword(Email, NP);
-				response.sendRedirect("Patient-Login.jsp");
+				response.sendRedirect("user-Login.jsp");
 			} else {
 				request.setAttribute("msg", "New Pssword and Confirm New Password are Not matched.");
 				request.setAttribute("Email", Email);
