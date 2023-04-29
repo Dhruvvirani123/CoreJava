@@ -89,7 +89,7 @@
 							</div>
 							<div class="col-lg-5 col-6 header-w3layouts pl-4 text-lg-left">
 								<p class="text-white">
-									<i class="fas fa-phone mr-2"></i>+91 9624360699</p>
+									<i class="fas fa-phone mr-2"></i>+91 7046970488</p>
 							</div>
 						</div>
 					</div>

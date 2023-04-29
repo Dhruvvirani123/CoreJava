@@ -6,10 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="input"/>
+		<item key="selection" value="Register"/>
 		<list key="findhistory">
-			<item value="input"/>
 			<item value="register"/>
+			<item value="Patient"/>
+			<item value="user"/>
+			<item value="input"/>
 			<item value="https://i.ibb.co/Pcg0Pk1/logo.png"/>
 			<item value="assets/img/logo.png"/>
 			<item value="shop"/>
@@ -21,10 +23,10 @@
 			<item value=" "/>
 			<item value="height"/>
 			<item value="FREE SHIPPING"/>
-			<item value="login-wrap"/>
-			<item value="navbar-brand"/>
 		</list>
 		<list key="replacehistory">
+			<item value="user"/>
+			<item value=""/>
 			<item value=" "/>
 			<item value="virani"/>
 			<item value="Username"/>
