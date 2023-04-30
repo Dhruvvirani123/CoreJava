@@ -1,7 +1,7 @@
 package Model;
 
 public class customermodel {
-		private String Password,Username,EmailAdderss,ConfirmPassword;
+		private String Password,Username,EmailAdderss,Repeat_Password;
 
 		public String getPassword() {
 			return Password;
@@ -28,17 +28,17 @@ public class customermodel {
 		}
 
 		public String getConfirmPassword() {
-			return ConfirmPassword;
+			return Repeat_Password;
 		}
 
 		public void setConfirmPassword(String confirmPassword) {
-			ConfirmPassword = confirmPassword;
+			Repeat_Password = confirmPassword;
 		}
 
 		@Override
 		public String toString() {
 			return "customermodel [Password=" + Password + ", Username=" + Username + ", EmailAdderss=" + EmailAdderss
-					+ ", ConfirmPassword=" + ConfirmPassword + "]";
+					+ ", ConfirmPassword=" + Repeat_Password + "]";
 		}
 		
 		

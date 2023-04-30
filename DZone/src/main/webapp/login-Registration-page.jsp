@@ -65,7 +65,7 @@
 					<input id="pass" type="text" class="input">
 				</div>
 				<div class="group">
-					<input type="submit" class="button" value="Sign Up">
+					<input type="submit" name="action" value="register">
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">

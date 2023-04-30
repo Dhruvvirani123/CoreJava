@@ -38,7 +38,7 @@ public class CustomerController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {{
 			String action = request.getParameter("action");
-			if (action.equalsIgnoreCase("")) {
+			if (action.equalsIgnoreCase("register")) {
 				customermodel c  = new customermodel();
 				c.setUsername(request.getParameter("Username"));
 				c.setPassword(request.getParameter("Password"));

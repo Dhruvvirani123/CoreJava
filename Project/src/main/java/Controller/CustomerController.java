@@ -43,7 +43,7 @@ public class CustomerController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String action = request.getParameter("action");
-		if(action.equalsIgnoreCase("register")) {
+		if(action.equalsIgnoreCase("Register")) {
 			Customer c = new Customer();
 			c.setName(request.getParameter("name"));
 			c.setContact(Long.parseLong(request.getParameter("contact")));
