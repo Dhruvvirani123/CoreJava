@@ -15,7 +15,7 @@ import Model.cart;
 /**
  * Servlet implementation class cart
  */
-@WebServlet("/cart")
+@WebServlet("/CartController")
 public class CartController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

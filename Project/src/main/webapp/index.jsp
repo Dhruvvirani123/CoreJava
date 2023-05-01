@@ -3,13 +3,12 @@
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
+License: Creative Commons Attrib=ution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
 <!DOCTYPE html>
 <html lang="zxx">
-
 <head>
 <title>Bootie Ecommerce Bootstrap Responsive Web Template | Home
 	:: W3layouts</title>
@@ -46,9 +45,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //Fonts -->
 
 </head>
-
 <body>
-
 	<!-- mian-content -->
 	<div class="main-banner" id="home">
 		<!-- header -->
@@ -62,7 +59,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								aria-hidden="true"></span>ootie</a>
 						</h1>
 					</div>
-
 					<label for="drop" class="toggle">Menu</label> <input
 						type="checkbox" id="drop" />
 					<ul class="menu mt-2">
@@ -70,7 +66,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li><a href="about.html">About</a></li>
 						<li><a href="blog.html">Blog</a></li>
 						<li>
-							<!-- First Tier Drop Down --> <label for="drop-2" 	class="toggle">Drop
+							<!-- First Tier Drop Down --> <label for="drop-2" class="toggle">Drop
 								Down <span class="fa fa-angle-down" aria-hidden="true"></span>
 						</label> <a href="#">Register <span class="fa fa-angle-down"
 								aria-hidden="true"></span></a> <input type="checkbox" id="drop-2" />
@@ -106,7 +102,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 		<!--// banner-inner -->
-
 	</div>
 	<!--//main-content-->
 	<!--/ab -->

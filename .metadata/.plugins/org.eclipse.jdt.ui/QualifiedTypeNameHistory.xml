@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="coreJava.swing"/>
-    <fullyQualifiedTypeName name="coreJava.string_Count"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="Connacation.DBConnection"/>
     <fullyQualifiedTypeName name="javax.servlet.annotation.ServletSecurity.TransportGuarantee"/>
     <fullyQualifiedTypeName name="com.mysql.cj.protocol.Message"/>
     <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="CoreJava.cd"/>
     <fullyQualifiedTypeName name="CoreJava.A"/>
     <fullyQualifiedTypeName name="CoreJava.b"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="CoreJava.cylinder"/>
+    <fullyQualifiedTypeName name="javax.script.AbstractScriptEngine"/>
+    <fullyQualifiedTypeName name="CoreJava.circle"/>
 </qualifiedTypeNameHistroy>

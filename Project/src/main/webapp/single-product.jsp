@@ -5,6 +5,12 @@
 <%@page import="Model.Customer"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 
 <!DOCTYPE html>
 <html lang="zxx">
@@ -126,7 +132,7 @@
 			Product p = ProductDao.getProductByPid(id);
 			%>
 			<div class="desc1-left col-md-6">
-				<img src="images/<%=p.getImage()%>" class="img-fluid" alt="">
+				<img src="image/<%=p.getImage()%>" class="img-fluid" alt="">
 			</div>
 			<div class="desc1-right col-md-6 pl-lg-4">
 				<h3><%=p.getPname()%></h3>
@@ -177,6 +183,9 @@
 		</div>
 
 	</div>
+
+
+
 	<!-- footer -->
 	<footer>
 		<div class="container">
@@ -284,5 +293,7 @@
 		</div>
 	</footer>
 	<!-- //footer -->
+
 </body>
+
 </html>

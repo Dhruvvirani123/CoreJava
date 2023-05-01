@@ -3,7 +3,8 @@ package Dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
+import java.util.ArrayList;
+import java.util.List;
 
 import Model.Seller;
 import connection.DBConnection;
@@ -119,6 +120,40 @@ public class SellerDao {
 			pst.setString(2, email);
 			pst.executeUpdate();
 			System.out.println("password changed");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public static List<Seller> getAllSellers(){
+		List<Seller> list = new ArrayList<Seller>();
+		try {
+			Connection connection = DBConnection.createConnection();
+			String sqlString="select * from seller";
+			PreparedStatement pst = connection.prepareStatement(sqlString);
+			ResultSet rSet = pst.executeQuery();
+			while(rSet.next()) {
+				Seller s1 = new Seller();
+				s1.setId(rSet.getInt("id"));
+				s1.setName(rSet.getString("name"));
+				s1.setContact(rSet.getLong("contact"));
+				s1.setAddress(rSet.getString("address"));
+				s1.setEmail(rSet.getString("email"));
+				s1.setPassword(rSet.getString("password"));
+				list.add(s1);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+	public static void deleteSeller(int id){
+		try {
+			Connection connection = DBConnection.createConnection();
+			String sqlString="delete from seller where id=?";
+			PreparedStatement pst = connection.prepareStatement(sqlString);
+			pst.setInt(1, id);
+			pst.executeUpdate();
+			System.out.println("data deleted");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

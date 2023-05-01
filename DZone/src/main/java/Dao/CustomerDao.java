@@ -11,7 +11,7 @@ public class CustomerDao {
 	public static void insertCustomer(customermodel c) {
 		try {
 			Connection conn = DBConnecation.creConnection();
-			String sql = "insert into customer_register(Username,Password,RepeatPassword,Email) values(?,?,?,?)";
+			String sql = "insert into customer_register(Username,Password,RepeatPassword,EmailAdderss) values(?,?,?,?)";
 			PreparedStatement pst = conn.prepareStatement(sql);
 			pst.setString(1, c.getUsername());
 			pst.setString(2, c.getPassword());
