@@ -74,5 +74,4 @@ public class OrderCreation extends HttpServlet {
 			e.printStackTrace();
 		}
 	}
-
 }
