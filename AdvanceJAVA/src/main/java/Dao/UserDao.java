@@ -9,7 +9,6 @@ import java.util.List;
 import Model.User;
 import connectivity.DBconnection;
 
-
 //Data Insert
 public class UserDao {
 	public static void insertUser(User d) {
