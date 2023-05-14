@@ -31,8 +31,6 @@
 	Welcome, Name :	<%=u.getName() %>
 	Contact :	<%=u.getContact() %>
 	Address :	<%=u.getAddress() %>
-	Email :		<%=u.getEmail() %>
-	Password :	<%=u.getPassword() %>
 
 
 	<div class="container">
