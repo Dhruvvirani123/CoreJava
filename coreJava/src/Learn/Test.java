@@ -21,9 +21,8 @@ public class Test {
 //		System.out.println(sb1.toString() == s1);
 //		System.out.println(sb1.toString().equals(s1));
 
-		
-		//Q.3
-		
+		// Q.3
+
 //		System.out.println("a");
 //		try {
 //			System.out.println("b");
@@ -36,10 +35,9 @@ public class Test {
 //			System.out.println("d");
 //		}
 //		System.out.println("e");
-		
-		
-		//Q.4
-		
+
+		// Q.4
+
 //		int[] array = {6,11,8};
 //		List<Integer> list = new ArrayList<Integer>();
 //		list.add(array[0]);
@@ -47,9 +45,18 @@ public class Test {
 //		list.set(1, array[1]);
 //		list.remove(0);
 //		System.out.println(list);
+
+		// Q.5
+
+//		String str = "ONE"+1+2+"TWO"+"Three"+3+4+"Four"+"FIVE"+5;
+//		System.out.println(str);
 		
+		//Q.5
 		
-		//Q.4
+		//System.out.println(Math.min(Double.MIN_VALUE, 0.0d));
+		
+		//Q.6
+		
 		
 		
 	}
