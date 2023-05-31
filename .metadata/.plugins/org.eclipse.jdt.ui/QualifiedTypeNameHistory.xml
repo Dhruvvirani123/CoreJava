@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="userdao.userdao"/>
-    <fullyQualifiedTypeName name="model.usermodel"/>
-    <fullyQualifiedTypeName name="Connecation.DBConnecation"/>
-    <fullyQualifiedTypeName name="Dao.SellerDao"/>
-    <fullyQualifiedTypeName name="Model.sellermodel"/>
-    <fullyQualifiedTypeName name="javax.swing.filechooser.FileNameExtensionFilter"/>
-    <fullyQualifiedTypeName name="CoreJava.string1"/>
     <fullyQualifiedTypeName name="CoreJava.String"/>
     <fullyQualifiedTypeName name="CoreJava.mobile"/>
     <fullyQualifiedTypeName name="CoreJava.Squre"/>
@@ -46,7 +39,6 @@
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="coreJava.string_Count"/>
     <fullyQualifiedTypeName name="coreJava.employee"/>
     <fullyQualifiedTypeName name="coreJava.Address"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -60,4 +52,12 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="Learn.parent"/>
     <fullyQualifiedTypeName name="Learn.child"/>
+    <fullyQualifiedTypeName name="Learn.test"/>
+    <fullyQualifiedTypeName name="Learn.emp"/>
+    <fullyQualifiedTypeName name="Learn.programer"/>
+    <fullyQualifiedTypeName name="Inheritance.babydog"/>
+    <fullyQualifiedTypeName name="Inheritance.animal"/>
+    <fullyQualifiedTypeName name="Inheritance.cat"/>
+    <fullyQualifiedTypeName name="coreJava.string_Count"/>
+    <fullyQualifiedTypeName name="Learn.base"/>
 </qualifiedTypeNameHistroy>
