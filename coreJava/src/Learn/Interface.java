@@ -1,35 +1,18 @@
 package Learn;
 
-interface A {
-	void a();
-
-	void b();
-
-	void c();
-
-	void d();
+interface ptint {
+	void print();
 }
 
-abstract class B implements A {
-	public void c() {
-		System.out.println("I am C");
-	}
-}
-
-class M extends B {
-	public void a() {
-		System.out.println("I am a");
-		System.out.println("I am b");
-		System.out.println("I am d");
+class a implements ptint {
+	public void print() {
+		System.out.println("Hello");
 	}
 }
 
 public class Interface {
 	public static void main(String[] args) {
-		A a = new M();
-		a.a();
-		a.b();
-		a.c();
-		a.d();
+		a a = new a();
+		a.print();
 	}
 }
