@@ -8,9 +8,9 @@ public class String_Equals {
 		System.out.println(s1 == s2);
 		System.out.println(s1.equals(s2));
 
-		char ch[] = { 'D', 'h', 'r', 'u', 'v' };
-		String ch1 = new String(ch);
-		System.out.println(ch);
-
+//		char ch[] = { 'D', 'h', 'r', 'u', 'v' };
+//		String ch1 = new String(ch);
+//		System.out.println(ch);
+		
 	}
 }

@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="CoreJava.Employee"/>
-    <fullyQualifiedTypeName name="CoreJava.myemployee"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="CoreJava.a"/>
-    <fullyQualifiedTypeName name="CoreJava.cd"/>
-    <fullyQualifiedTypeName name="CoreJava.A"/>
-    <fullyQualifiedTypeName name="CoreJava.b"/>
     <fullyQualifiedTypeName name="CoreJava.cylinder"/>
     <fullyQualifiedTypeName name="javax.script.AbstractScriptEngine"/>
     <fullyQualifiedTypeName name="CoreJava.circle"/>
@@ -60,4 +53,11 @@
     <fullyQualifiedTypeName name="Learn.Object"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="Learn.obj"/>
+    <fullyQualifiedTypeName name="Learn.A"/>
+    <fullyQualifiedTypeName name="Learn.bike"/>
+    <fullyQualifiedTypeName name="Learn.honda"/>
+    <fullyQualifiedTypeName name="Learn.Shape"/>
+    <fullyQualifiedTypeName name="Learn.circal"/>
+    <fullyQualifiedTypeName name="Learn.Bike"/>
+    <fullyQualifiedTypeName name="Learn.Honda"/>
 </qualifiedTypeNameHistroy>
