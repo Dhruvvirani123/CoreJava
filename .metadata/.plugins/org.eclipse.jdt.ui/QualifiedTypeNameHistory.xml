@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="Dao.CustomerDao"/>
     <fullyQualifiedTypeName name="Model.Customer"/>
@@ -40,7 +39,6 @@
     <fullyQualifiedTypeName name="Inheritance.cat"/>
     <fullyQualifiedTypeName name="coreJava.string_Count"/>
     <fullyQualifiedTypeName name="Learn.base"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="Learn.Object"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="Learn.A"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="Learn.f"/>
     <fullyQualifiedTypeName name="Learn.obj"/>
     <fullyQualifiedTypeName name="Learn.tir"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="Learn.student"/>
 </qualifiedTypeNameHistroy>
