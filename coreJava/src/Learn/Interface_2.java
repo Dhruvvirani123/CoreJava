@@ -10,7 +10,7 @@ class Ractangle implements Drawable {
 	}
 }
 
-class Circal implements Drawable {
+class Circal2 implements Drawable {
 	public void draw() {
 		System.out.println("Drawing Circal...");
 	}
@@ -18,7 +18,7 @@ class Circal implements Drawable {
 
 public class Interface_2 {
 	public static void main(String[] args) {
-		Drawable d = new Circal();
+		Drawable d = new Circal2();
 		d.draw();
 	}
 }

@@ -1,7 +1,7 @@
 package Learn;
 
-abstract class Bike {
-	Bike() {
+abstract class Bike1 {
+	Bike1() {
 		System.out.println("Bike is Created");
 	}
 
@@ -12,7 +12,7 @@ abstract class Bike {
 	}
 }
 
-class Honda extends Bike {
+class Honda1 extends Bike1 {
 	void run() {
 		System.out.println("Running....");
 	}
@@ -20,7 +20,7 @@ class Honda extends Bike {
 
 public class Abstract_constructor {
 	public static void main(String[] args) {
-		Bike b = new Honda();
+		Bike1 b = new Honda1();
 		b.run();
 		b.changeGear();
 	}

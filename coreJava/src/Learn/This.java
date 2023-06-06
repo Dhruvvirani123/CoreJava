@@ -22,5 +22,10 @@ public class This {
 		student s1 = new student(300, "Dk", 15000);
 		s.disply();
 		s1.disply();
+		getterandsetter s2 = new getterandsetter();
+		
+		s2.setId(13);
+		s2.id = 12;
+		System.out.println(s2.id);
 	}
 }

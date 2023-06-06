@@ -6,7 +6,7 @@ abstract class dh {
 	}
 }
 
-class dk {
+class dk extends dh{
 	void call() {
 		System.out.println("DK");
 	}
@@ -23,5 +23,6 @@ public class Abstraction_p {
 	public static void main(String[] args) {
 		tir obj = new tir();
 		obj.bh();
+		obj.call();
 	}
 }

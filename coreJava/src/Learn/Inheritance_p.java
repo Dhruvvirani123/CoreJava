@@ -12,8 +12,9 @@ abstract class d implements b, c {
 	void call() {
 
 	}
+
 	public void print() {
-		
+
 	}
 }
 
@@ -24,9 +25,7 @@ class f extends d {
 
 	@Override
 	public void print() {
-		// TODO Auto-generated method stub
 		System.out.println("dhruv");
-		
 	}
 }
 
