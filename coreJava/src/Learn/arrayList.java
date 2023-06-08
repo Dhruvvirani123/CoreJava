@@ -19,6 +19,7 @@ public class arrayList {
 		a.add('a');
 		a.add(12);
 		System.out.println(a);
+		// Collections.sort(a); Run-time error
 
 		ArrayList<Float> c = new ArrayList<Float>();
 		c.add(12.2f);
@@ -40,7 +41,9 @@ public class arrayList {
 		abc.add("Tirth");
 		System.out.println(abc);
 		System.out.println("Returning element : " + abc.get(2));// To get index number vise
-
+		abc.set(0, "Romil");//Change in index vise
+		
+		
 		for (String st : abc) {
 			System.out.println(st);
 		}
@@ -66,12 +69,22 @@ public class arrayList {
 		in.add(90);
 		in.add(5);
 
-		Collections.sort(in); //Number vise sorted
+		Collections.sort(in); // Number vise sorted
 		for (Integer s1 : in) {
 			System.out.println(s1);
 		}
-		
-		
+
+		ArrayList<Float> flo = new ArrayList<Float>();
+		flo.add(12.45f);
+		flo.add(2.45f);
+		flo.add(12.46f);
+		flo.add(121.89f);
+		flo.add(2.46f);
+
+		Collections.sort(flo); // Ha bete Moj krdi.. Smile...
+		for (Float f : flo) {
+			System.out.println(f);
+		}
 
 	}
 }
