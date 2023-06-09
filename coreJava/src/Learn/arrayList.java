@@ -41,9 +41,8 @@ public class arrayList {
 		abc.add("Tirth");
 		System.out.println(abc);
 		System.out.println("Returning element : " + abc.get(2));// To get index number vise
-		abc.set(0, "Romil");//Change in index vise
-		
-		
+		abc.set(0, "Romil");// Change in index vise
+
 		for (String st : abc) {
 			System.out.println(st);
 		}
@@ -85,6 +84,5 @@ public class arrayList {
 		for (Float f : flo) {
 			System.out.println(f);
 		}
-
 	}
 }
