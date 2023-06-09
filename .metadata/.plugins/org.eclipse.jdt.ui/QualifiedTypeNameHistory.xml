@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-    <fullyQualifiedTypeName name="com.mysql.cj.exceptions.StatementIsClosedException"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="Learn.parent"/>
-    <fullyQualifiedTypeName name="Learn.child"/>
-    <fullyQualifiedTypeName name="Learn.test"/>
-    <fullyQualifiedTypeName name="Learn.emp"/>
-    <fullyQualifiedTypeName name="Learn.programer"/>
-    <fullyQualifiedTypeName name="Inheritance.babydog"/>
-    <fullyQualifiedTypeName name="Inheritance.animal"/>
-    <fullyQualifiedTypeName name="Inheritance.cat"/>
-    <fullyQualifiedTypeName name="coreJava.string_Count"/>
-    <fullyQualifiedTypeName name="Learn.base"/>
-    <fullyQualifiedTypeName name="Learn.Object"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="Learn.A"/>
-    <fullyQualifiedTypeName name="Learn.bike"/>
-    <fullyQualifiedTypeName name="Learn.honda"/>
     <fullyQualifiedTypeName name="Learn.Shape"/>
     <fullyQualifiedTypeName name="Learn.circal"/>
     <fullyQualifiedTypeName name="Learn.Bike"/>
@@ -60,4 +41,23 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="Learn.Opps.student"/>
     <fullyQualifiedTypeName name="Learn.Opps.Study"/>
+    <fullyQualifiedTypeName name="Learn.Opps.bi2"/>
+    <fullyQualifiedTypeName name="Learn.Opps.dk"/>
+    <fullyQualifiedTypeName name="Learn.Opps.dhruv"/>
+    <fullyQualifiedTypeName name="Learn.Opps.dkd"/>
+    <fullyQualifiedTypeName name="Learn.Opps.dh"/>
+    <fullyQualifiedTypeName name="Learn.Opps.dd"/>
+    <fullyQualifiedTypeName name="Learn.Opps.bi"/>
+    <fullyQualifiedTypeName name="Learn.Opps.bike"/>
+    <fullyQualifiedTypeName name="Learn.Opps.h"/>
+    <fullyQualifiedTypeName name="Learn.Opps.rd"/>
+    <fullyQualifiedTypeName name="Learn.Opps.shape"/>
+    <fullyQualifiedTypeName name="Learn.Opps.re"/>
+    <fullyQualifiedTypeName name="Learn.Opps.bank"/>
+    <fullyQualifiedTypeName name="Learn.abstract55"/>
+    <fullyQualifiedTypeName name="Learn.Opps.hon1"/>
+    <fullyQualifiedTypeName name="Learn.Opps.dn"/>
+    <fullyQualifiedTypeName name="Learn.Opps.drv"/>
+    <fullyQualifiedTypeName name="Learn.Opps.z"/>
+    <fullyQualifiedTypeName name="Learn.Opps.Account"/>
 </qualifiedTypeNameHistroy>
