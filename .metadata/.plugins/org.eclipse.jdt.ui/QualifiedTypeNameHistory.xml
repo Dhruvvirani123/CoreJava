@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Learn.ptint"/>
-    <fullyQualifiedTypeName name="Learn.a"/>
     <fullyQualifiedTypeName name="Learn.Drawable"/>
     <fullyQualifiedTypeName name="Learn.Circal"/>
     <fullyQualifiedTypeName name="Learn.Abstract"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="Learn.Execption"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="javax.print.event.PrintJobAdapter"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 </qualifiedTypeNameHistroy>
