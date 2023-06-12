@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Learn.Drawable"/>
-    <fullyQualifiedTypeName name="Learn.Circal"/>
-    <fullyQualifiedTypeName name="Learn.Abstract"/>
-    <fullyQualifiedTypeName name="Learn.e"/>
-    <fullyQualifiedTypeName name="Learn.f"/>
     <fullyQualifiedTypeName name="Learn.obj"/>
     <fullyQualifiedTypeName name="Learn.tir"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="Learn.student"/>
-    <fullyQualifiedTypeName name="coreJava.sum_1_to_any_number"/>
     <fullyQualifiedTypeName name="Learn.piyush"/>
     <fullyQualifiedTypeName name="Learn.getterandsetter"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="javax.print.event.PrintJobAdapter"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="Super_KeyWord.school"/>
+    <fullyQualifiedTypeName name="Super_KeyWord.school1"/>
+    <fullyQualifiedTypeName name="coreJava.sum_1_to_any_number"/>
+    <fullyQualifiedTypeName name="Super_KeyWord.te"/>
+    <fullyQualifiedTypeName name="Super_KeyWord.person"/>
+    <fullyQualifiedTypeName name="Super_KeyWord.teacher"/>
 </qualifiedTypeNameHistroy>
