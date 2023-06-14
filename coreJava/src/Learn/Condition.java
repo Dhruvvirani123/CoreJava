@@ -1,10 +1,13 @@
 package Learn;
 
+import java.util.Scanner;
+
 public class Condition {
 	public static void main(String[] args) {
 		System.out.println("Nested If....");
-
-		int marks = 70;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter Mareks : ");
+		int marks = sc.nextInt();
 
 		if (marks < 50) {
 			System.out.println("Fail...");
