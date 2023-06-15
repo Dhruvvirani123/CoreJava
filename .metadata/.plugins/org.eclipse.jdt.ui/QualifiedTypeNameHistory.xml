@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Learn.tir"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="Learn.student"/>
-    <fullyQualifiedTypeName name="Learn.piyush"/>
     <fullyQualifiedTypeName name="Learn.getterandsetter"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="Collection.HashMap"/>
@@ -58,6 +54,10 @@
     <fullyQualifiedTypeName name="Super_KeyWord.te"/>
     <fullyQualifiedTypeName name="Super_KeyWord.person"/>
     <fullyQualifiedTypeName name="Super_KeyWord.teacher"/>
-    <fullyQualifiedTypeName name="Learn.mainmethod_final"/>
     <fullyQualifiedTypeName name="Learn.dvd"/>
+    <fullyQualifiedTypeName name="Learn.mainmethod_final"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Learn.Shape"/>
+    <fullyQualifiedTypeName name="Learn.circal"/>
 </qualifiedTypeNameHistroy>
