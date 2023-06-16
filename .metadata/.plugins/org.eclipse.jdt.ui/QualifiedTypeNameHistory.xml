@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Learn.getterandsetter"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="Collection.HashMap"/>
     <fullyQualifiedTypeName name="Learn.Abstract_Static"/>
@@ -42,10 +41,8 @@
     <fullyQualifiedTypeName name="Learn.Opps.z"/>
     <fullyQualifiedTypeName name="Learn.Opps.Account"/>
     <fullyQualifiedTypeName name="Learn.Opps.dnv"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="Learn.Execption"/>
-    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="javax.print.event.PrintJobAdapter"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="Super_KeyWord.school"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="Learn.Shape"/>
     <fullyQualifiedTypeName name="Learn.circal"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
