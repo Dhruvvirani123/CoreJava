@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Learn.LinkedList"/>
-    <fullyQualifiedTypeName name="Learn.Opps.student"/>
     <fullyQualifiedTypeName name="Learn.Opps.Study"/>
     <fullyQualifiedTypeName name="Learn.Opps.bi2"/>
     <fullyQualifiedTypeName name="Learn.Opps.dk"/>
@@ -49,7 +47,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="Learn.mainmethod_final"/>
     <fullyQualifiedTypeName name="coreJava.swing"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Statement"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="Learn.mainmethod_final"/>
+    <fullyQualifiedTypeName name="java.io.Writer"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
 </qualifiedTypeNameHistroy>
