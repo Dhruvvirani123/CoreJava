@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Learn.Opps.Study"/>
-    <fullyQualifiedTypeName name="Learn.Opps.bi2"/>
     <fullyQualifiedTypeName name="Learn.Opps.dk"/>
     <fullyQualifiedTypeName name="Learn.Opps.dhruv"/>
     <fullyQualifiedTypeName name="Learn.Opps.dkd"/>
@@ -24,7 +22,6 @@
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="Learn.Execption"/>
     <fullyQualifiedTypeName name="javax.print.event.PrintJobAdapter"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="Super_KeyWord.school"/>
     <fullyQualifiedTypeName name="Super_KeyWord.school1"/>
     <fullyQualifiedTypeName name="coreJava.sum_1_to_any_number"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.io.Writer"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="Learn.mainmethod_final"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
 </qualifiedTypeNameHistroy>
