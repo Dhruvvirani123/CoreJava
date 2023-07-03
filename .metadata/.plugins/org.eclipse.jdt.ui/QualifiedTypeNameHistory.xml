@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Learn.Opps.dk"/>
     <fullyQualifiedTypeName name="Learn.Opps.dhruv"/>
     <fullyQualifiedTypeName name="Learn.Opps.dkd"/>
     <fullyQualifiedTypeName name="Learn.Opps.dh"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="javax.servlet.Servlet"/>
 </qualifiedTypeNameHistroy>
