@@ -153,11 +153,13 @@ public class Swing implements ActionListener {
 					t5.setText(dhruv.getString("email"));
 					System.out.println("see");
 				} else {
+					new Popup();
 					t1.setText("");
 					t2.setText("");
 					t3.setText("");
 					t4.setText("");
 					t5.setText("");
+					System.out.println("Data not Found.....");
 				}
 			} catch (Exception e2) {
 				e2.printStackTrace();
