@@ -82,9 +82,9 @@ public class Swing implements ActionListener {
 		fr.add(b4);
 
 		b1.addActionListener(this);
-		b1.addActionListener(this);
-		b1.addActionListener(this);
-		b1.addActionListener(this);
+		b2.addActionListener(this);
+		b3.addActionListener(this);
+		b4.addActionListener(this);
 	}
 
 	public static void main(String[] args) {
@@ -199,10 +199,11 @@ public class Swing implements ActionListener {
 			int id = Integer.parseInt(t1.getText());
 			try {
 				Connection con = swing.createConnection();
-				String sql = "delete from virani where id = ?";
+				String sql = "delete from virani where id=?";
 				PreparedStatement pst = con.prepareStatement(sql);
 				pst.setInt(1, id);
 				pst.executeUpdate();
+				System.out.println("Deleted.....");
 				t1.setText("");
 				t2.setText("");
 				t3.setText("");
