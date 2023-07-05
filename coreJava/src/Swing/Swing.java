@@ -198,7 +198,7 @@ public class Swing implements ActionListener {
 			System.out.println("Delete Button Clicked...");
 			int id = Integer.parseInt(t1.getText());
 			try {
-				Connection con = swing.createConnection();
+				Connection con = Swing.createConnection();
 				String sql = "delete from virani where id=?";
 				PreparedStatement pst = con.prepareStatement(sql);
 				pst.setInt(1, id);
