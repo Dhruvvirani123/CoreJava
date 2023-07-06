@@ -15,10 +15,10 @@ public class rock_paper_scissors {
 		System.out.println("Welcome to Rock, Paper, Scissors!");
 
 		while (true) {
-			System.out.print("Enter your choice (0 for Rock, 1 for Paper, 2 for Scissors, -1 to quit): ");
+			System.out.print("Enter your choice (0 for Rock, 1 for Paper, 2 for Scissors, 9 to quit): ");
 			int playerChoice = scanner.nextInt();
 
-			if (playerChoice == -1) {
+			if (playerChoice == 9) {
 				System.out.println("Thanks for playing. Goodbye!");
 				break;
 			}
