@@ -3,13 +3,11 @@ package Exception;
 public class Finally_Block {
 	public static void main(String[] args) {
 		try {
-			int a = 10/0;
+			int a = 10 / 0;
 			System.out.println(a);
-		}
-		catch (Exception e) {
+		} catch (Exception e) { // Catch block is compulsory
 			e.printStackTrace();
-		}
-		finally {
+		} finally {
 			System.out.println("Finally BLock Executed");
 		}
 	}

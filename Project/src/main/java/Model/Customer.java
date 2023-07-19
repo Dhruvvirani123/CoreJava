@@ -2,7 +2,7 @@ package Model;
 
 public class Customer {
 	private int id;
-	private String name, address, email, passwordString;
+	private String name, address, email, password;
 	private long contact;
 
 	public int getId() {
@@ -38,11 +38,11 @@ public class Customer {
 	}
 
 	public String getPasswordString() {
-		return passwordString;
+		return password;
 	}
 
 	public void setPasswordString(String passwordString) {
-		this.passwordString = passwordString;
+		this.password = passwordString;
 	}
 
 	public long getContact() {
@@ -56,6 +56,6 @@ public class Customer {
 	@Override
 	public String toString() {
 		return "Customer [id=" + id + ", name=" + name + ", address=" + address + ", email=" + email
-				+ ", passwordString=" + passwordString + ", contact=" + contact + "]";
+				+ ", passwordString=" + password + ", contact=" + contact + "]";
 	}
 }

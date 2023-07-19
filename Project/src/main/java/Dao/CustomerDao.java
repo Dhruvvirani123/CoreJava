@@ -9,12 +9,11 @@ import java.util.List;
 import Model.Customer;
 import connection.DBConnection;
 
-
 public class CustomerDao {
 	public static void insertCustomer(Customer c) {
 		try {
 			Connection con = DBConnection.createConnection();
-			String sql="insert into customer(name,contact,address,email,password) values(?,?,?,?,?)";
+			String sql = "insert into customer(name,contact,address,email,password) values(?,?,?,?,?)";
 			PreparedStatement pst = con.prepareStatement(sql);
 			pst.setString(1, c.getName());
 			pst.setLong(2, c.getContact());
@@ -27,16 +26,17 @@ public class CustomerDao {
 			e.printStackTrace();
 		}
 	}
+
 	public static Customer loginCustomer(Customer c) {
 		Customer c1 = null;
 		try {
 			Connection conn = DBConnection.createConnection();
-			String sql="select * from customer where email=? and password=?";
+			String sql = "select * from customer where email=? and password=?";
 			PreparedStatement pst = conn.prepareStatement(sql);
 			pst.setString(1, c.getEmail());
 			pst.setString(2, c.getPasswordString());
 			ResultSet rs = pst.executeQuery();
-			if(rs.next()) {
+			if (rs.next()) {
 				c1 = new Customer();
 				c1.setId(rs.getInt("id"));
 				c1.setName(rs.getString("name"));
@@ -50,14 +50,15 @@ public class CustomerDao {
 		}
 		return c1;
 	}
-	public static List<Customer> getallCustomers(){
+
+	public static List<Customer> getallCustomers() {
 		List<Customer> list = new ArrayList<>();
 		try {
 			Connection conn = DBConnection.createConnection();
 			String sql = "select from customer";
 			PreparedStatement pst = conn.prepareStatement(sql);
 			ResultSet rs = pst.executeQuery();
-			while(rs.next()) {
+			while (rs.next()) {
 				Customer c1 = new Customer();
 				c1.setId(rs.getInt("Id"));
 				c1.setName(rs.getString("name"));
@@ -72,5 +73,5 @@ public class CustomerDao {
 		}
 		return list;
 	}
-	
+
 }

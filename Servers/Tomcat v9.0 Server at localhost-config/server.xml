@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="DZone" path="/DZone" reloadable="true" source="org.eclipse.jst.jee.server:DZone"/><Context docBase="AdvanceJAVA" path="/AdvanceJAVA" reloadable="true" source="org.eclipse.jst.jee.server:AdvanceJAVA"/><Context docBase="Project" path="/Project" reloadable="true" source="org.eclipse.jst.jee.server:Project"/><Context docBase="JSP_Dhruv" path="/JSP_Dhruv" reloadable="true" source="org.eclipse.jst.jee.server:JSP_Dhruv"/></Host>
+      <Context docBase="DZone" path="/DZone" reloadable="true" source="org.eclipse.jst.jee.server:DZone"/><Context docBase="AdvanceJAVA" path="/AdvanceJAVA" reloadable="true" source="org.eclipse.jst.jee.server:AdvanceJAVA"/><Context docBase="Project" path="/Project" reloadable="true" source="org.eclipse.jst.jee.server:Project"/><Context docBase="JSP_Dhruv" path="/JSP_Dhruv" reloadable="true" source="org.eclipse.jst.jee.server:JSP_Dhruv"/><Context docBase="Admin_Panel" path="/Admin_Panel" reloadable="true" source="org.eclipse.jst.jee.server:Admin_Panel"/></Host>
     </Engine>
   </Service>
 </Server>
